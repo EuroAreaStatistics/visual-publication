@@ -1,0 +1,16 @@
+{
+  "plugins": [
+  [
+      "react-intl-auto",
+      {
+        "removePrefix": "src/",
+        "filebase": false,
+        "useKey": true
+      }
+    ]
+  ],
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ]
+}

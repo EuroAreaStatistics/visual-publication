@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <title>1.3 Measures of money</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This website explains the ECB’s definition of money, the types of bank financing for households and companies and the monetary policy tools in the euro area."
+    />
+    <meta
+      name="keywords"
+      content="Statistics, Money, Credit, European Central Bank, ECB, Interest rate, Financing, Monetary policy, Euro area, Volume, Price, Comparison, Inflation, Deposit, Loan, Household, Company"
+    />
+    <meta name="author" content="European Central Bank" />
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="css/animsition.min.css" />
+    <link rel="stylesheet" href="css/app.d1346986c6.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/jquery.webui-popover.css" />
+    <script src="js/vendor/promise-polyfill.min.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+  </head>
+
+  <body>
+    <div
+      id="bloc"
+      class="border animsition animsition-overlay"
+      data-animsition-overlay="true"
+    >
+      <div id="menu">
+        <div
+          class="wide-menu-color left hide-for-small-only hide-for-medium-only"
+        >
+          <ul
+            class="dropdown menu language"
+            data-dropdown-menu="true"
+            data-disable-hover="true"
+            data-click-open="true"
+          >
+            <li>
+              <a href="#">English</a>
+              <ul class="menu">
+                <li><a href="?lang=bg">Български</a></li>
+                <li><a href="?lang=cs">Čeština</a></li>
+                <li><a href="?lang=da">Dansk</a></li>
+                <li><a href="?lang=de">Deutsch</a></li>
+                <li><a href="?lang=et">Eesti keel</a></li>
+                <li><a href="?lang=en">English</a></li>
+                <li><a href="?lang=es">Español</a></li>
+                <li><a href="?lang=el">Eλληνικά</a></li>
+                <li><a href="?lang=fr">Français</a></li>
+                <li><a href="?lang=hr">Hrvatski</a></li>
+                <li><a href="?lang=it">Italiano</a></li>
+                <li><a href="?lang=lv">Latviešu</a></li>
+                <li><a href="?lang=lt">Lietuvių</a></li>
+                <li><a href="?lang=hu">Magyar</a></li>
+                <li><a href="?lang=mt">Malti</a></li>
+                <li><a href="?lang=nl">Nederlands</a></li>
+                <li><a href="?lang=pl">Polski</a></li>
+                <li><a href="?lang=pt">Português</a></li>
+                <li><a href="?lang=ro">Română</a></li>
+                <li><a href="?lang=sk">Slovenčina</a></li>
+                <li><a href="?lang=sl">Slovenščina</a></li>
+                <li><a href="?lang=fi">Suomi</a></li>
+                <li><a href="?lang=sv">Svenska</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="shade-0">
+            <ul>
+              <li class="menuHome">
+                <a
+                  href="index.html"
+                  data-tooltip=""
+                  aria-haspopup="true"
+                  class="has-tip right"
+                  data-disable-hover="false"
+                  tabindex="4"
+                  title="Home"
+                  data-trans-id="components.Menu.home"
+                  data-trans-attr="title"
+                ></a>
+              </li>
+              <li class="menuInfo">
+                <a
+                  data-open="infoModal"
+                  data-tooltip=""
+                  aria-haspopup="true"
+                  class="has-tip right"
+                  data-disable-hover="false"
+                  tabindex="4"
+                  title="Information"
+                  data-trans-id="components.Menu.info"
+                  data-trans-attr="title"
+                ></a>
+              </li>
+              <div
+                class="reveal large"
+                style="font-size: 14px; overflow-y: auto"
+                id="infoModal"
+                data-reveal=""
+              >
+                <div class="medium-12 medium-centered columns">
+                  <h3 class="text-center">
+                    <span data-trans-id="components.Info.title"
+                      >Further Information</span
+                    >
+                  </h3>
+                  <div data-trans-id="components.Info.text">
+                    <p>
+                      Money, credit and central bank interest rates is a digital
+                      publication produced by European Central Bank and the
+                      national central banks of the Eurosystem. The publication
+                      aims to make it easier to understand, use and compare euro
+                      area and national statistics. It presents the statistics
+                      visually, uses reader-friendly terms, is digitally
+                      reusable via the embed function and is available in 23 EU
+                      languages.
+                    </p>
+                    <h4>Information on data</h4>
+                    <p>
+                      The data are updated in real time and available from the
+                      <a href="http://sdw.ecb.europa.eu/"
+                        >Statistical Data Warehouse</a
+                      >.
+                    </p>
+                    <h4>Disclaimer</h4>
+                    <p>
+                      Permission is hereby granted, free of charge, to any
+                      person obtaining a copy of the work and associated
+                      documentation files (the “Software”), to deal in the
+                      Software without restriction, including without limitation
+                      the rights to use, copy, modify, merge, publish,
+                      distribute, sublicense, and/or sell copies of the
+                      Software, and to permit persons to whom the Software is
+                      furnished to do so, subject to the following conditions
+                    </p>
+                    <p>
+                      The software is provided “as is”, without warranty of any
+                      kind.
+                    </p>
+                    <p>
+                      In no event shall the authors or copyright holders be
+                      liable for any claim, damages or other liability, whether
+                      in an action of contract, tort or otherwise, arising from,
+                      out of or in connection with the Software or the use or
+                      other dealings in the software.
+                    </p>
+                    <p>
+                      The Software is built upon and made available by Eurostat.
+                      See also
+                      <a href="https://ec.europa.eu/info/legal-notice_en"
+                        >Eurostat Disclaimer</a
+                      >.
+                    </p>
+                    <p>
+                      The ECB/Eurostat does not take responsibility for any
+                      replication of the content of the Software, or any other
+                      form of redistribution.
+                    </p>
+                    <p>Cover photo © Ipopba/iStock</p>
+                    <p>
+                      The European System of Central Banks (ESCB) is committed
+                      to providing its statistics free of charge as a public
+                      good of high quality irrespective of any subsequent
+                      commercial or non-commercial use. All publicly available
+                      ESCB statistics may be reused free of charge on the
+                      condition that the source is quoted (e.g. “Source: euro
+                      area statistics”) and that the statistics (including
+                      metadata) are not modified.
+                    </p>
+                    <h4>
+                      <a href="http://www.euro.ecb.europa.eu/"
+                        >The Eurosystem</a
+                      >
+                    </h4>
+                    <p>
+                      <a href="http://www.nbb.be/"
+                        >Nationale Bank van België/Banque Nationale de
+                        Belgique</a
+                      >
+                    </p>
+                    <p>
+                      <a href="http://www.bundesbank.de/"
+                        >Deutsche Bundesbank</a
+                      >
+                    </p>
+                    <p><a href="http://www.eestipank.ee/">Eesti Pank</a></p>
+                    <p>
+                      <a href="http://www.centralbank.ie/"
+                        >Central Bank of Ireland</a
+                      >
+                    </p>
+                    <p>
+                      <a href="http://www.bankofgreece.gr/">Bank of Greece</a>
+                    </p>
+                    <p><a href="http://www.bde.es/">Banco de España</a></p>
+                    <p>
+                      <a href="http://www.banque-france.fr/"
+                        >Banque de France</a
+                      >
+                    </p>
+                    <p>
+                      <a href="http://www.bancaditalia.it/">Banca d’Italia</a>
+                    </p>
+                    <p>
+                      <a href="https://www.centralbank.cy/"
+                        >Central Bank of Cyprus</a
+                      >
+                    </p>
+                    <p><a href="http://www.bank.lv/">Latvijas Banka</a></p>
+                    <p><a href="http://www.lb.lt/">Lietuvos bankas</a></p>
+                    <p>
+                      <a href="http://www.bcl.lu/"
+                        >Banque centrale du Luxembourg</a
+                      >
+                    </p>
+                    <p>
+                      <a href="http://www.centralbankmalta.org/"
+                        >Bank Ċentrali ta’ Malta/CentralBank of Malta</a
+                      >
+                    </p>
+                    <p>
+                      <a href="http://www.dnb.nl/">De Nederlandsche Bank</a>
+                    </p>
+                    <p>
+                      <a href="http://www.oenb.at/"
+                        >Oesterreichische Nationalbank</a
+                      >
+                    </p>
+                    <p>
+                      <a href="http://www.bportugal.pt/">Banco de Portugal</a>
+                    </p>
+                    <p><a href="http://www.bsi.si/">Banka Slovenije</a></p>
+                    <p>
+                      <a href="http://www.nbs.sk/">Národná banka Slovenska</a>
+                    </p>
+                    <p>
+                      <a href="http://www.suomenpankki.fi/"
+                        >Suomen Pankki – Finlands Bank</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="close-button"
+                  data-close=""
+                  aria-label="Close modal"
+                  type="button"
+                >
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+            </ul>
+          </div>
+          <div class="shade-1">
+            <span class="chapterTitle"
+              ><span data-trans-id="components.Menu.chapter1"
+                >Chapter 1</span
+              ></span
+            ><a
+              href="bloc-1.html"
+              data-tooltip=""
+              aria-haspopup="true"
+              class="has-tip left"
+              data-disable-hover="false"
+              tabindex="4"
+              title="1. Money"
+              data-trans-id="pages.Bloc1.title"
+              data-trans-attr="title"
+            ></a>
+            <ul class="submenu submenu1">
+              <li class="submenuBtn1">
+                <a
+                  href="bloc-1a.html"
+                  data-tooltip=""
+                  aria-haspopup="true"
+                  class="has-tip right"
+                  data-disable-hover="false"
+                  tabindex="4"
+                  title="1.1 Cash"
+                  data-trans-id="pages.Bloc1a.title"
+                  data-trans-attr="title"
+                ></a>
+              </li>
+              <li class="submenuBtn2">
+                <a
+                  href="bloc-1b.html"
+                  data-tooltip=""
+                  aria-haspopup="true"
+                  class="has-tip right"
+                  data-disable-hover="false"
+                  tabindex="4"
+                  title="1.2 Deposits"
+                  data-trans-id="pages.Bloc1b.title"
+                  data-trans-attr="title"
+                ></a>
+              </li>
+              <li class="submenuBtn3">
+                <a
+                  href="bloc-1c.html"
+                  data-tooltip=""
+                  aria-haspopup="true"
+                  class="has-tip right"
+                  data-disable-hover="false"
+                  tabindex="4"
+                  title="1.3 Measures of money"
+                  data-trans-id="pages.Bloc1c.title"
+                  data-trans-attr="title"
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="shade-2">
+            <span class="chapterTitle"
+              ><span data-trans-id="components.Menu.chapter2"
+                >Chapter 2</span
+              ></span
+            ><a
+              href="bloc-2.html"
+              data-tooltip=""
+              aria-haspopup="true"
+              class="has-tip left"
+              data-disable-hover="false"
+              tabindex="4"
+              title="2. Credit"
+              data-trans-id="pages.Bloc2.title"
+              data-trans-attr="title"
+            ></a>
+            <ul class="submenu submenu2">
+              <li class="submenuBtn5">
+                <a
+                  href="bloc-2a.html"
+                  data-tooltip=""
+                  aria-haspopup="true"
+                  class="has-tip right"
+                  data-disable-hover="false"
+                  tabindex="4"
+                  title="2.1 Bank loans to households"
+                  data-trans-id="pages.Bloc2a.title"
+                  data-trans-attr="title"
+                ></a>
+              </li>
+              <li class="submenuBtn6">
+                <a
+                  href="bloc-2b.html"
+                  data-tooltip=""
+                  aria-haspopup="true"
+                  class="has-tip right"
+                  data-disable-hover="false"
+                  tabindex="4"
+                  title="2.2 Bank loans to companies"
+                  data-trans-id="pages.Bloc2b.title"
+                  data-trans-attr="title"
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="shade-3">
+            <span class="chapterTitle"
+              ><span data-trans-id="components.Menu.chapter3"
+                >Chapter 3</span
+              ></span
+            ><a
+              href="bloc-3.html"
+              data-tooltip=""
+              aria-haspopup="true"
+              class="has-tip left"
+              data-disable-hover="false"
+              tabindex="4"
+              title="3. Central bank interest rates"
+              data-trans-id="pages.Bloc3a.title"
+              data-trans-attr="title"
+            ></a>
+          </div>
+        </div>
+        <div class="mobile-menu hide-for-large">
+          <nav
+            class="title-bar"
+            data-responsive-toggle="mobile-menu"
+            data-hide-for="large"
+          >
+            <button class="menu-icon" type="button" data-toggle=""></button>
+            <div class="title-bar-title">
+              <span data-trans-id="components.Menu.menu">Menu</span>
+            </div>
+            <ul
+              class="dropdown menu language"
+              data-dropdown-menu="true"
+              data-disable-hover="true"
+              data-click-open="true"
+            >
+              <li>
+                <a href="#">English</a>
+                <ul class="menu">
+                  <li><a href="?lang=bg">Български</a></li>
+                  <li><a href="?lang=cs">Čeština</a></li>
+                  <li><a href="?lang=da">Dansk</a></li>
+                  <li><a href="?lang=de">Deutsch</a></li>
+                  <li><a href="?lang=et">Eesti keel</a></li>
+                  <li><a href="?lang=en">English</a></li>
+                  <li><a href="?lang=es">Español</a></li>
+                  <li><a href="?lang=el">Eλληνικά</a></li>
+                  <li><a href="?lang=fr">Français</a></li>
+                  <li><a href="?lang=hr">Hrvatski</a></li>
+                  <li><a href="?lang=it">Italiano</a></li>
+                  <li><a href="?lang=lv">Latviešu</a></li>
+                  <li><a href="?lang=lt">Lietuvių</a></li>
+                  <li><a href="?lang=hu">Magyar</a></li>
+                  <li><a href="?lang=mt">Malti</a></li>
+                  <li><a href="?lang=nl">Nederlands</a></li>
+                  <li><a href="?lang=pl">Polski</a></li>
+                  <li><a href="?lang=pt">Português</a></li>
+                  <li><a href="?lang=ro">Română</a></li>
+                  <li><a href="?lang=sk">Slovenčina</a></li>
+                  <li><a href="?lang=sl">Slovenščina</a></li>
+                  <li><a href="?lang=fi">Suomi</a></li>
+                  <li><a href="?lang=sv">Svenska</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <nav class="top-bar" id="mobile-menu">
+            <ul class="vertical menu full-width" data-accordion-menu="">
+              <li class="has-submenu">
+                <a href="index.html"
+                  ><span aria-hidden="true" class="fa fa-home"></span
+                  ><span data-trans-id="components.Menu.home">Home</span></a
+                >
+              </li>
+              <li class="has-submenu">
+                <a href="bloc-1.html"
+                  ><span style="padding-left: 16px"></span
+                  ><span data-trans-id="pages.Bloc1.title">1. Money</span></a
+                >
+                <ul class="submenu menu vertical nested" data-submenu="">
+                  <li>
+                    <a href="bloc-1a.html"
+                      ><span data-trans-id="pages.Bloc1a.title"
+                        >1.1 Cash</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="bloc-1b.html"
+                      ><span data-trans-id="pages.Bloc1b.title"
+                        >1.2 Deposits</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="bloc-1c.html"
+                      ><span data-trans-id="pages.Bloc1c.title"
+                        >1.3 Measures of money</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a href="bloc-2.html"
+                  ><span style="padding-left: 16px"></span
+                  ><span data-trans-id="pages.Bloc2.title">2. Credit</span></a
+                >
+                <ul class="submenu menu vertical nested" data-submenu="">
+                  <li>
+                    <a href="bloc-2a.html"
+                      ><span data-trans-id="pages.Bloc2a.title"
+                        >2.1 Bank loans to households</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="bloc-2b.html"
+                      ><span data-trans-id="pages.Bloc2b.title"
+                        >2.2 Bank loans to companies</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a href="bloc-3.html"
+                  ><span style="padding-left: 16px"></span
+                  ><span data-trans-id="pages.Bloc3a.title"
+                    >3. Central bank interest rates</span
+                  ></a
+                >
+              </li>
+              <li class="has-submenu">
+                <a data-open="infoModal2"
+                  ><span aria-hidden="true" class="fa fa-info-circle"></span
+                  ><span data-trans-id="components.Menu.info"
+                    >Information</span
+                  ></a
+                >
+              </li>
+              <div
+                class="reveal large"
+                id="infoModal2"
+                data-reveal=""
+                style="overflow-y: auto"
+              >
+                <div class="small-8 small-centered columns">
+                  <h3 class="text-center">
+                    <span data-trans-id="components.Info.title"
+                      >Further Information</span
+                    >
+                  </h3>
+                  <div data-trans-id="components.Info.text">
+                    <p>
+                      Money, credit and central bank interest rates is a digital
+                      publication produced by European Central Bank and the
+                      national central banks of the Eurosystem. The publication
+                      aims to make it easier to understand, use and compare euro
+                      area and national statistics. It presents the statistics
+                      visually, uses reader-friendly terms, is digitally
+                      reusable via the embed function and is available in 23 EU
+                      languages.
+                    </p>
+                    <h4>Information on data</h4>
+                    <p>
+                      The data are updated in real time and available from the
+                      <a href="http://sdw.ecb.europa.eu/"
+                        >Statistical Data Warehouse</a
+                      >.
+                    </p>
+                    <h4>Disclaimer</h4>
+                    <p>
+                      Permission is hereby granted, free of charge, to any
+                      person obtaining a copy of the work and associated
+                      documentation files (the “Software”), to deal in the
+                      Software without restriction, including without limitation
+                      the rights to use, copy, modify, merge, publish,
+                      distribute, sublicense, and/or sell copies of the
+                      Software, and to permit persons to whom the Software is
+                      furnished to do so, subject to the following conditions
+                    </p>
+                    <p>
+                      The software is provided “as is”, without warranty of any
+                      kind.
+                    </p>
+                    <p>
+                      In no event shall the authors or copyright holders be
+                      liable for any claim, damages or other liability, whether
+                      in an action of contract, tort or otherwise, arising from,
+                      out of or in connection with the Software or the use or
+                      other dealings in the software.
+                    </p>
+                    <p>
+                      The Software is built upon and made available by Eurostat.
+                      See also
+                      <a href="https://ec.europa.eu/info/legal-notice_en"
+                        >Eurostat Disclaimer</a
+                      >.
+                    </p>
+                    <p>
+                      The ECB/Eurostat does not take responsibility for any
+                      replication of the content of the Software, or any other
+                      form of redistribution.
+                    </p>
+                    <p>Cover photo © Ipopba/iStock</p>
+                    <p>
+                      The European System of Central Banks (ESCB) is committed
+                      to providing its statistics free of charge as a public
+                      good of high quality irrespective of any subsequent
+                      commercial or non-commercial use. All publicly available
+                      ESCB statistics may be reused free of charge on the
+                      condition that the source is quoted (e.g. “Source: euro
+                      area statistics”) and that the statistics (including
+                      metadata) are not modified.
+                    </p>
+                    <h4>
+                      <a href="http://www.euro.ecb.europa.eu/"
+                        >The Eurosystem</a
+                      >
+                    </h4>
+                    <p>
+                      <a href="http://www.nbb.be/"
+                        >Nationale Bank van België/Banque Nationale de
+                        Belgique</a
+                      >
+                    </p>
+                    <p>
+                      <a href="http://www.bundesbank.de/"
+                        >Deutsche Bundesbank</a
+                      >
+                    </p>
+                    <p><a href="http://www.eestipank.ee/">Eesti Pank</a></p>
+                    <p>
+                      <a href="http://www.centralbank.ie/"
+                        >Central Bank of Ireland</a
+                      >
+                    </p>
+                    <p>
+                      <a href="http://www.bankofgreece.gr/">Bank of Greece</a>
+                    </p>
+                    <p><a href="http://www.bde.es/">Banco de España</a></p>
+                    <p>
+                      <a href="http://www.banque-france.fr/"
+                        >Banque de France</a
+                      >
+                    </p>
+                    <p>
+                      <a href="http://www.bancaditalia.it/">Banca d’Italia</a>
+                    </p>
+                    <p>
+                      <a href="https://www.centralbank.cy/"
+                        >Central Bank of Cyprus</a
+                      >
+                    </p>
+                    <p><a href="http://www.bank.lv/">Latvijas Banka</a></p>
+                    <p><a href="http://www.lb.lt/">Lietuvos bankas</a></p>
+                    <p>
+                      <a href="http://www.bcl.lu/"
+                        >Banque centrale du Luxembourg</a
+                      >
+                    </p>
+                    <p>
+                      <a href="http://www.centralbankmalta.org/"
+                        >Bank Ċentrali ta’ Malta/CentralBank of Malta</a
+                      >
+                    </p>
+                    <p>
+                      <a href="http://www.dnb.nl/">De Nederlandsche Bank</a>
+                    </p>
+                    <p>
+                      <a href="http://www.oenb.at/"
+                        >Oesterreichische Nationalbank</a
+                      >
+                    </p>
+                    <p>
+                      <a href="http://www.bportugal.pt/">Banco de Portugal</a>
+                    </p>
+                    <p><a href="http://www.bsi.si/">Banka Slovenije</a></p>
+                    <p>
+                      <a href="http://www.nbs.sk/">Národná banka Slovenska</a>
+                    </p>
+                    <p>
+                      <a href="http://www.suomenpankki.fi/"
+                        >Suomen Pankki – Finlands Bank</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="close-button"
+                  data-close=""
+                  aria-label="Close modal"
+                  type="button"
+                >
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+            </ul>
+          </nav>
+        </div>
+        <script src="js/vendor/foundation.min.js"></script>
+        <script src="js/vendor/l10n.js"></script>
+        <script src="l10n/localisations.js"></script>
+        <script src="js/lang.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/menu-onload.js"></script>
+      </div>
+      <div class="wide-section bloc">
+        <div class="bloc-full">
+          <div class="row containeur" data-equalizer="">
+            <div class="medium-6 columns bloc-left" data-equalizer-watch="">
+              <div class="panel">
+                <div class="row">
+                  <h3>
+                    <span data-trans-id="pages.Bloc1c.title"
+                      >1.3 Measures of money</span
+                    >
+                  </h3>
+                  <div data-trans-id="pages.Bloc1c.text">
+                    <p>
+                      Over the long term inflation and the increase in the
+                      amount of money circulating in the economy should be
+                      related. Central banks therefore monitor growth in money
+                      volumes in order to cross-check identified risks to price
+                      stability. To this end, the Eurosystem has defined
+                      different measures of money – known as monetary
+                      aggregates. These aggregates are derived from the balance
+                      sheet of entities that the Eurosystem calls “monetary
+                      financial institutions”, or MFIs, which consist of central
+                      banks, commercial banks and other financial institutions
+                      and funds that receive deposits, such as money market
+                      funds.
+                    </p>
+                    <h4>1.3.1 Monetary aggregates</h4>
+                    <p>
+                      Monetary aggregates are defined in terms of the liquidity
+                      of assets – i.e. how quickly and easily an asset can be
+                      converted into cash or used to make payments.
+                    </p>
+                    <p>
+                      The narrowest and most liquid measure of money is M1,
+                      which comprises banknotes and coins in circulation and
+                      overnight deposits.
+                    </p>
+                    <p>
+                      The broader aggregate M2 contains M1 as well as deposits
+                      with an agreed maturity of up to two years, or those
+                      redeemable at notice with a notice period of up to three
+                      months.
+                    </p>
+                    <p>
+                      The broadest monetary aggregate is M3. In addition to M1
+                      and M2, it includes financial instruments that closely
+                      resemble deposits, such as repurchase agreements, shares
+                      issued by money market funds and short-term debt
+                      securities (such as bonds) issued by banks.
+                    </p>
+                    <p>
+                      As a general rule, government deposits held at banks are
+                      excluded from monetary aggregates as the government sector
+                      is not considered to be a money-holding sector.
+                    </p>
+                    <p>
+                      Analysing developments in monetary aggregates is an
+                      integral part of the monetary analysis that – alongside
+                      analysis of economic developments – supports the monetary
+                      policy decisions of the ECB’s Governing Council.
+                      Similarly, analysis of credits granted by banks to the
+                      private sector can also be useful for monetary policy
+                      decisions.
+                    </p>
+                    <h4>1.3.2 Monetary statistics</h4>
+                    <p>
+                      The data on M1, M2 and M3 are available in the ECB’s
+                      <a href="https://sdw.ecb.europa.eu/"
+                        >Statistical Data Warehouse</a
+                      >. They are published at a monthly frequency for the euro
+                      area as a whole – no country-level data are calculated.
+                    </p>
+                    <p>
+                      Looking at the latest developments in
+                      <a
+                        href="https://sdw.ecb.europa.eu/reports.do?node=1000003477"
+                        >euro area monetary aggregates</a
+                      >, the annual growth rate of M3 was [Value 1]% in [Date
+                      1]. The components of M3 showed the following
+                      developments: the annual growth rate of the narrowest
+                      aggregate (M1) was [Value 2]%, the annual growth rate of
+                      short-term deposits other than overnight deposits (M2
+                      minus M1) was [Value 3]%, and the annual growth rate of
+                      marketable instruments (M3 minus M2) was [Value 4]%.
+                    </p>
+                  </div>
+                </div>
+                <div class="social-menu">
+                  <button
+                    class="facebook"
+                    title="Facebook"
+                    data-trans-id="components.buttons.facebook"
+                    data-trans-attr="title"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="fa fa-facebook-square"
+                    ></span></button
+                  ><button
+                    class="twitter"
+                    title="Twitter"
+                    data-trans-id="components.buttons.twitter"
+                    data-trans-attr="title"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="fa fa-twitter"
+                    ></span></button
+                  ><button
+                    class="mail bloc"
+                    title="Email"
+                    data-trans-id="components.buttons.mail"
+                    data-trans-attr="title"
+                  >
+                    <span aria-hidden="true" class="fa fa-envelope"></span>
+                  </button>
+                </div>
+                <div class="pagination">
+                  <div class="small-6 columns text-left">
+                    <a href="bloc-1b.html"
+                      ><i class="fa fa-arrow-left"></i
+                      ><span data-trans-id="pages.Bloc1b.title"
+                        >1.2 Deposits</span
+                      ></a
+                    >
+                  </div>
+                  <div class="small-6 columns text-right"></div>
+                </div>
+              </div>
+            </div>
+            <div class="medium-6 columns bloc-right" data-equalizer-watch="">
+              <div class="panel">
+                <h3>
+                  <span data-trans-id="pages.Bloc1c.infographics1"
+                    >Monetary aggregates</span
+                  >
+                </h3>
+                <iframe
+                  style="height: 800px"
+                  id="Iframe1"
+                  data-height="0.6"
+                  data-body-click=""
+                  src="vis/chapter13_1/index.html?simple=simple"
+                  alt="Monetary aggregates"
+                  data-trans-id="pages.Bloc1c.infographics1"
+                  data-trans-attr="alt"
+                ></iframe>
+                <p class="compareCountry">
+                  <span data-trans-id="pages.Bloc1c.infographicsCaption1"
+                    >Click to enlarge and for breakdowns</span
+                  >
+                </p>
+                <div class="social-menu embed-menu text-center">
+                  <button
+                    class="embed"
+                    data-iframe="Iframe1"
+                    title="Embed"
+                    data-trans-id="components.buttons.embed"
+                    data-trans-attr="title"
+                  >
+                    <span aria-hidden="true" class="fa fa-code"></span></button
+                  ><button
+                    class="mail"
+                    data-iframe="Iframe1"
+                    title="Email"
+                    data-trans-id="components.buttons.mail"
+                    data-trans-attr="title"
+                  >
+                    <span aria-hidden="true" class="fa fa-envelope"></span>
+                  </button>
+                </div>
+                <div class="row" style="margin-top: 10px">
+                  <h3>
+                    <span data-trans-id="pages.Bloc1c.infographics2"
+                      >Monetary aggregates</span
+                    >
+                  </h3>
+                  <div class="iframeContainer">
+                    <iframe
+                      style="height: 800px"
+                      id="Iframe2"
+                      data-height="0.5"
+                      src="vis/chapter13_2/index.html?simple=simple"
+                      title="Monetary aggregates"
+                      data-trans-id="pages.Bloc1c.infographics2"
+                      data-trans-attr="title"
+                    ></iframe>
+                  </div>
+                  <p class="compareCountry">
+                    <span data-trans-id="pages.Bloc1c.infographicsCaption2"
+                      >Click to enlarge and for breakdowns</span
+                    >
+                  </p>
+                  <div class="social-menu embed-menu text-center">
+                    <button
+                      class="embed"
+                      data-iframe="Iframe2"
+                      title="Embed"
+                      data-trans-id="components.buttons.embed"
+                      data-trans-attr="title"
+                    >
+                      <span
+                        aria-hidden="true"
+                        class="fa fa-code"
+                      ></span></button
+                    ><button
+                      class="mail"
+                      data-iframe="Iframe2"
+                      title="Email"
+                      data-trans-id="components.buttons.mail"
+                      data-trans-attr="title"
+                    >
+                      <span aria-hidden="true" class="fa fa-envelope"></span>
+                    </button>
+                  </div>
+                  <div
+                    class="reveal large text-center"
+                    data-iframe="Iframe2"
+                    data-reveal=""
+                  >
+                    <button
+                      class="close-button"
+                      data-close=""
+                      aria-label="Close modal"
+                      type="button"
+                    >
+                      <span aria-hidden="true" data-reset-on-close="">×</span>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="reveal large text-center"
+                  data-iframe="Iframe1"
+                  data-reveal=""
+                >
+                  <button
+                    class="close-button"
+                    data-close=""
+                    aria-label="Close modal"
+                    type="button"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/l10n.js"></script>
+    <script src="l10n/localisations.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/bloc-1c.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery.webui-popover.min.js"></script>
+    <script src="js/animsition.min.js"></script>
+    <script src="js/animsition-onload.js"></script>
+    <script src="js/section-onload.js"></script>
+  </body>
+</html>
