@@ -49,7 +49,7 @@ const Bloc1 = () => {
                       </div>
                       <div className="medium-4 text-center columns">
                         <Trans attr="alt" message={messages.title}>
-                          <img src="images/bloc-1/main.svg" />
+                          <img src="images/icones/chapter-1.svg" />
                         </Trans>
                       </div>
                       <div className="medium-12 columns">
@@ -81,7 +81,7 @@ const Bloc1 = () => {
                       </div>
                       <div className="medium-4 text-center columns">
                         <Trans attr="alt" message={bloc1a.title}>
-                          <img src="images/bloc-1/section-1.svg" />
+                          <img src="images/icones/chapter-1-1.svg" />
                         </Trans>
                       </div>
                       <div className="medium-12 columns">
@@ -114,7 +114,7 @@ const Bloc1 = () => {
                       </div>
                       <div className="medium-4 text-center columns">
                         <Trans attr="alt" message={bloc1b.title}>
-                          <img src="images/bloc-1/section-2.svg" />
+                          <img src="images/icones/chapter-1-2.svg" />
                         </Trans>
                       </div>
                       <div className="medium-12 columns">
@@ -146,7 +146,7 @@ const Bloc1 = () => {
                       </div>
                       <div className="medium-4 text-center  columns">
                         <Trans attr="alt" message={bloc1c.title}>
-                          <img src="images/bloc-1/section-3.svg" />
+                          <img src="images/icones/chapter-1-3.svg" />
                         </Trans>
                       </div>
                       <div className="medium-12 columns">
@@ -173,8 +173,8 @@ const Bloc1 = () => {
       <script src="js/app.js"></script>
       <script src="js/modernizr.custom.js"></script>
       <script src="js/jquery.webui-popover.min.js"></script>
-      <script src="js/animsition.min.js"></script>
-      <script src="js/animsition-onload.js"></script>
+      <script src="js/animsition.js"></script>
+      <script src="js/menu-onload.js"></script>
     </>
   );
 };

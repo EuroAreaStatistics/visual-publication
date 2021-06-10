@@ -57,6 +57,10 @@ $(function () {
     $(".shade-3").addClass("active");
   }
 
+  if (/bloc-4/.test(loc)) {
+    $(".shade-4").addClass("active");
+  }
+
   if (/bloc-1a/.test(loc)) {
     $(".shade-1").addClass("active");
     $(".submenu1").addClass("active");
@@ -76,15 +80,27 @@ $(function () {
   if (/bloc-2a/.test(loc)) {
     $(".shade-2").addClass("active");
     $(".submenu2").addClass("active");
-    $(".submenuBtn5").addClass("active");
+    $(".submenuBtn4").addClass("active");
   }
   if (/bloc-2b/.test(loc)) {
     $(".shade-2").addClass("active");
     $(".submenu2").addClass("active");
-    $(".submenuBtn6").addClass("active");
+    $(".submenuBtn5").addClass("active");
   }
+
   if (/bloc-3a/.test(loc)) {
     $(".shade-3").addClass("active");
     $(".submenu3").addClass("active");
+    $(".submenuBtn6").addClass("active");
+  }
+  if (/bloc-3b/.test(loc)) {
+    $(".shade-3").addClass("active");
+    $(".submenu3").addClass("active");
+    $(".submenuBtn7").addClass("active");
+  }
+
+  if (/bloc-4a/.test(loc)) {
+    $(".shade-4").addClass("active");
+    $(".submenu4").addClass("active");
   }
 });

@@ -25,6 +25,10 @@ const Section = ({
         <title>{intl.formatMessage(messages.title)}</title>
         <link rel="stylesheet" href="css/jquery.webui-popover.css" />
         <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/l10n.js"></script>
+        <script src="l10n/localisations.js"></script>
+        <script src="js/lang.js"></script>
+        <script src={script}></script>
       </Helmet>
 
       <div
@@ -107,16 +111,11 @@ const Section = ({
       </div>
 
       <script src="js/vendor/what-input.js"></script>
-      <script src="js/vendor/l10n.js"></script>
-      <script src="l10n/localisations.js"></script>
-      <script src="js/lang.js"></script>
-      <script src={script}></script>
       <script src="js/app.js"></script>
       <script src="js/modernizr.custom.js"></script>
       <script src="js/jquery.webui-popover.min.js"></script>
-      <script src="js/animsition.min.js"></script>
-      <script src="js/animsition-onload.js"></script>
-      <script src="js/section-onload.js"></script>
+      <script src="js/animsition.js"></script>
+      <script src="js/menu-onload.js"></script>
     </>
   );
 };

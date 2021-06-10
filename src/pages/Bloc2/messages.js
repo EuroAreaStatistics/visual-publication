@@ -1,10 +1,9 @@
 import { defineMessages } from "react-intl";
 
 export default defineMessages({
-  title: "2. Credit",
+  title: "2. How is inflation measured?",
   summary:
-    "Credit to the private sector is one of the main elements that the Eurosystem monitors as part of its analysis of monetary developments.",
-  text: `<p>Credit to the private sector is one of the main elements that the Eurosystem monitors as part of its analysis of monetary developments, since it provides information on the spending and funding of the private sector.</p>\r
-<p>For this purpose, the ECB collects and publishes a wide range of statistics on bank loans and other credit to households and companies.</p>\r
-<p>The following sections look more closely at loans to households and to companies, and present the respective statistics.</p>`,
+    "This chapter introduces the Harmonised Index of Consumer Prices – the inflation measure that the ECB uses for assessing price stability – and presents some of its main components and data.",
+  text:
+    '<p class="MsoNormal">In its task of maintaining price stability in the euro area the ECB takes account of inflation developments. The indicator it uses for monitoring and analysing inflation is the Harmonised Index of Consumer Prices (HICP). This chapter looks more closely at consumer price inflation and the HICP.</p>',
 });

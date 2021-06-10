@@ -1,7 +1,7 @@
-Digital publication: Money, credit and central bank interest rates
-==================================================================
+Digital publication: Inflation
+==============================
 
-These are the sources used to build the digitial publication "Money, credit and central bank interest rates".
+These are the sources used to build the digitial publication "Inflation".
 It has been developed in JavaScript using Node.js version 12.
 The built files in the `public` folder consist of static HTML, CSS and JavaScript which can be run on any web server.
 

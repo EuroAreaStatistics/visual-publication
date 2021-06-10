@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #003299;
+      }
+    </style>
+  </defs>
+  <title>icon</title>
+  <g id="Layer_3" data-name="Layer 3">
+    <g>
+      <rect class="cls-1" x="52.941" y="67.647" width="8.824" height="8.823" rx="0.294" ry="0.294"/>
+      <rect class="cls-1" x="52.941" y="55.883" width="8.824" height="8.823" rx="0.294" ry="0.294"/>
+      <rect class="cls-1" x="38.235" y="32.353" width="8.823" height="8.823" rx="0.294" ry="0.294"/>
+      <rect class="cls-1" x="52.941" y="44.118" width="8.824" height="8.823" rx="0.294" ry="0.294"/>
+      <rect class="cls-1" x="52.941" y="79.412" width="8.824" height="8.824" rx="0.294" ry="0.294"/>
+      <rect class="cls-1" x="52.941" y="32.353" width="8.824" height="8.823" rx="0.294" ry="0.294"/>
+      <rect class="cls-1" x="67.647" y="67.647" width="8.823" height="20.588" rx="0.294" ry="0.294"/>
+      <rect class="cls-1" x="67.647" y="44.118" width="8.823" height="8.823" rx="0.294" ry="0.294"/>
+      <rect class="cls-1" x="67.647" y="32.353" width="8.823" height="8.823" rx="0.294" ry="0.294"/>
+      <rect class="cls-1" x="67.647" y="55.883" width="8.823" height="8.823" rx="0.294" ry="0.294"/>
+      <rect class="cls-1" x="38.235" y="44.118" width="8.823" height="8.823" rx="0.294" ry="0.294"/>
+      <rect class="cls-1" x="38.235" y="55.883" width="8.823" height="8.823" rx="0.294" ry="0.294"/>
+      <rect class="cls-1" x="23.529" y="11.029" width="52.941" height="15.441" rx="0.294" ry="0.294"/>
+      <path class="cls-1" d="M87.941,0H12.059a.3.3,0,0,0-.294.294V99.706a.3.3,0,0,0,.294.294H87.941a.3.3,0,0,0,.294-.294V.294A.3.3,0,0,0,87.941,0Zm-5.62,93.792a.3.3,0,0,1-.294.294H17.973a.3.3,0,0,1-.294-.294V6.208a.3.3,0,0,1,.294-.294H82.027a.3.3,0,0,1,.294.294Z"/>
+      <rect class="cls-1" x="23.529" y="44.118" width="8.823" height="8.823" rx="0.294" ry="0.294"/>
+      <rect class="cls-1" x="23.529" y="32.353" width="8.823" height="8.823" rx="0.294" ry="0.294"/>
+      <rect class="cls-1" x="38.235" y="67.647" width="8.823" height="8.823" rx="0.294" ry="0.294"/>
+      <rect class="cls-1" x="23.529" y="55.883" width="8.823" height="8.823" rx="0.294" ry="0.294"/>
+      <rect class="cls-1" x="38.235" y="79.412" width="8.823" height="8.824" rx="0.294" ry="0.294"/>
+      <rect class="cls-1" x="23.529" y="67.647" width="8.823" height="8.823" rx="0.294" ry="0.294"/>
+      <rect class="cls-1" x="23.529" y="79.412" width="8.823" height="8.824" rx="0.294" ry="0.294"/>
+    </g>
+  </g>
+</svg>

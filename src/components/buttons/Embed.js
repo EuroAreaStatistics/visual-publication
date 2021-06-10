@@ -6,9 +6,9 @@ const messages = defineMessages({
   embed: "Embed",
 });
 
-const Embed = ({ className = "", iframe }) => (
+const Embed = ({ className = "" }) => (
   <Trans attr="title" message={messages.embed}>
-    <button className={`embed ${className}`} data-iframe={iframe}>
+    <button className={`embed ${className}`}>
       <span aria-hidden="true" className="fa fa-code"></span>
     </button>
   </Trans>

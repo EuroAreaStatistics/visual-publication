@@ -5,39 +5,31 @@ import padStart from "core-js-pure/es/string/pad-start";
 // and replace values in translation
 
 // [Date 1]   latestMonth
-// [Value 1]  (0)[Date 1]   1 decimlals  billions
-// [Value 2]  (1)[Date 1]   1 decimlals  trillions
-// [Value 3]  (2)[Date 1]   1 decimlals  billions
-// [Value 4]  (3)[Date 1]   1 decimlals  billions
+// [Value 1]  (0)[Date 1]   1 decimlals
+// [Value 2]  (1)[Date 1]   1 decimlals
+// [Value 3]  (2)[Date 1]   1 decimlals
 
-import { formatNumber, formatMonthYear } from "../lib/format";
+import { formatValue, formatMonthYear } from "../lib/format";
 import { path, loadFrom } from "../lib/urls";
 
 const dataSets = [
-  // banknotes volume
+  // food
   {
-    code: "BKN.M.U2.NC10.B.ALLD.AS.S.Q",
+    code: "ICP.M.U2.N.010000.4.ANR",
     // one extra month in case this data set has newer data
     lastNObservations: 1 + 1,
   },
 
-  // banknotes value
+  // clothes and footwear
   {
-    code: "BKN.M.U2.NC10.B.ALLD.AS.S.E",
+    code: "ICP.M.U2.N.030000.4.ANR",
     // one extra month in case this data set has newer data
     lastNObservations: 1 + 1,
   },
 
-  // coins volume
+  // overall
   {
-    code: "BKN.M.U2.NC10.C.ALLD.AS.S.Q",
-    // one extra month in case this data set has newer data
-    lastNObservations: 1 + 1,
-  },
-
-  // coins value
-  {
-    code: "BKN.M.U2.NC10.C.ALLD.AS.S.E",
+    code: "ICP.M.U2.N.000000.4.ANR",
     // one extra month in case this data set has newer data
     lastNObservations: 1 + 1,
   },
@@ -70,11 +62,6 @@ const code2date = (code) => {
 
 const formatDate = formatMonthYear;
 
-const formatValue = (decimals, scale, v) =>
-  v === null
-    ? "missingValue".toLocaleString()
-    : formatNumber((v * scale).toFixed(decimals));
-
 export const update = ($el, txt) => {
   $el.html(
     txt
@@ -82,7 +69,6 @@ export const update = ($el, txt) => {
       .replace(/\[Value 1\]/g, "…")
       .replace(/\[Value 2\]/g, "…")
       .replace(/\[Value 3\]/g, "…")
-      .replace(/\[Value 4\]/g, "…")
   );
   Promise.all(dataSets.map(load)).then((results) => {
     const r = results.map(latestObservation);
@@ -94,19 +80,15 @@ export const update = ($el, txt) => {
         .replace(/\[Date 1\]/g, formatDate(date1))
         .replace(
           /\[Value 1\]/g,
-          formatValue(1, 1e-6, observationAt(results[0], date2code(date1)))
+          formatValue(1, observationAt(results[0], date2code(date1)))
         )
         .replace(
           /\[Value 2\]/g,
-          formatValue(1, 1e-9, observationAt(results[1], date2code(date1)))
+          formatValue(1, observationAt(results[1], date2code(date1)))
         )
         .replace(
           /\[Value 3\]/g,
-          formatValue(1, 1e-6, observationAt(results[2], date2code(date1)))
-        )
-        .replace(
-          /\[Value 4\]/g,
-          formatValue(1, 1e-6, observationAt(results[3], date2code(date1)))
+          formatValue(1, observationAt(results[2], date2code(date1)))
         )
     );
   });

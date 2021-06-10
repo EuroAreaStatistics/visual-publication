@@ -21,7 +21,7 @@ const Index = () => {
       ></div>
 
       <div className="wide-section" style={{ visibility: "hidden" }}>
-        <div className="large-6 columns homepageCover" data-equalizer-watch="">
+        <div className="large-6 columns homepageCover">
           <div className="title-menu">
             <div className="back-link">
               <a href="https://www.euro-area-statistics.org/?lg=en">
@@ -31,35 +31,41 @@ const Index = () => {
             <Language />
             <div className="clear-fix"></div>
           </div>
-          <div className="title" data-equalizer="bar">
-            <h1 id="title1">
-              {intl.formatMessage(messages.title).replace(/:.*/, ":")}
-            </h1>
-            <h1 id="title2">
-              {intl.formatMessage(messages.title).replace(/^[^:]*:?/, "")}
-            </h1>
+          <div className="title">
+            <a href="bloc-1.html">
+              <h1 id="title1">
+                {intl.formatMessage(messages.title).replace(/:.*/, ":")}
+              </h1>
+              <h1 id="title2">
+                {intl.formatMessage(messages.title).replace(/^[^:]*:?/, "")}
+              </h1>
+            </a>
           </div>
-          <div className="europe" data-equalizer="bar">
-            <Trans attr="alt" message={messages.title}>
-              <img src="images/cover.jpg" />
-            </Trans>
+          <div className="cover">
+            <a href="bloc-1.html">
+              <Trans attr="alt" message={messages.title}>
+                <img src="images/cover.png" />
+              </Trans>
+            </a>
           </div>
         </div>
 
         <div className="large-6 columns panel textHome">
-          <div className="text panel" data-equalizer-watch="">
+          <div className="text panel">
             <M>
               <FormattedHTMLMessage
                 key="introtext"
                 tagName="div"
-                defaultMessage='<p>Money is an integral part of our daily lives: we earn it, we save it and we spend it.</p>
-<p>Money is also at the heart of central banking. Central banks conduct monetary policy with the aim of maintaining price stability – this means preserving the value of money by keeping inflation under control.</p>
-<p>Inflation is generally linked to increases in the amount of money in the economy. Reliable data on money and credit (lending) are therefore essential for monetary policy. Central banks collect and publish a broad range of monetary statistics, using them as one of the key elements to support their decision-making on monetary policy. In turn, monetary policy, affects the “price” of money in the economy – i.e. the interest rates on deposits and loans of households and companies.</p>
-<p>This interactive publication looks at money and credit from the perspective of central bank statistics. It explains how the ECB defines money for statistical purposes, what types of bank financing are used by households and companies and what interest rates the ECB uses to influence the volume and price of money and credit in the euro area. It presents a readily comprehensible selection of statistics pertaining to these topics, at the euro area level and broken down to the national level, allowing for comparisons between countries. For more in-depth insights, there are links to the relevant sections of the ECB’s <a href="https://sdw.ecb.europa.eu/">Statistical Data Warehouse</a>.</p>
-<p>The publication is divided into three chapters, each with interactive visualisations:</p>
-<p><strong>1. Money:</strong> this chapter explains the different forms of money captured in the ECB’s statistics, as well as statistical measures of money, known as monetary aggregates.</p>
-<p><strong>2. Credit:</strong> this chapter looks at different types of bank loan captured in the ECB’s statistics and examines in more detail developments in loans provided to euro area households and companies.</p>
-<p><strong>3. Central bank interest rates:</strong> this chapter examines the key interest rates that the ECB uses as the core instrument to implement monetary policy and that, ultimately, affect the interest rates on deposits and loans of households and companies.</p>'
+                defaultMessage='<p>In a market economy, prices for goods and services can change at any time.</p>
+<p>Inflation is the term used for these price changes. It is important to measure it reliably and to keep it stable because when people and businesses feel confident that they know what the rate of inflation will be in the future they can make long-term plans. As a result, the economy functions better.</p>
+<p>This interactive publication looks at inflation from the statistical perspective. It explains in detail what inflation is and how it is measured by statistical offices at the national and European levels. It helps to clarify how inflation is a factor in central banks’ tasks and how the European Central Bank (ECB) monitors inflation. It also gives reasons why people may perceive inflation to be higher or lower than the officially measured inflation rate.</p>
+<p>The publication presents easy to understand statistics on inflation using interactive visuals that allow inflation rates to be compared across countries. The visuals also offer a more in-depth view of the various goods and services included in the “shopping basket” that is used for officially calculating inflation.</p>
+<p>You can also calculate your own inflation rate based on your own shopping basket of goods and services and compare it with the inflation rate for your country. Is your personal inflation rate above or below the average inflation rate for your country?</p>
+<p>This publication is divided into the following four chapters, each with interactive visuals:</p>
+<p><strong>1. What is inflation? </strong>This chapter explains the concept of inflation, why the inflation rate matters and how and why it differs across countries and over time.</p>
+<p><strong>2. How is inflation measured? </strong>This chapter looks at the method used to calculate the inflation rate. It explains which goods and services are included in the calculation and describes the challenges encountered.</p>
+<p><strong>3. Officially measured inflation and perceived inflation</strong>. <a name="_Hlk66207708"></a>This chapter explores how people perceive inflation, compares perceived inflation with officially measured inflation and explains the differences between the two.</p>
+<p class="MsoNormal"><strong>4. Personal inflation calculator.</strong> In this chapter you can calculate your own inflation rate based on the goods and services that you buy and compare it with officially calculated inflation rates.</p>'
               />
             </M>
 
@@ -72,7 +78,7 @@ const Index = () => {
                 <M>
                   <FormattedHTMLMessage
                     key="introbtn"
-                    defaultMessage="Go to publication"
+                    defaultMessage="Explore further"
                   />
                 </M>
               </a>
@@ -89,8 +95,7 @@ const Index = () => {
       <script src="js/main.js"></script>
       <script src="js/app.js"></script>
       <script src="js/jquery.webui-popover.min.js"></script>
-      <script src="js/animsition.min.js"></script>
-      <script src="js/animsition-onload.js"></script>
+      <script src="js/animsition.js"></script>
       <script src="js/index-onload.js"></script>
     </>
   );

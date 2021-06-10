@@ -17,6 +17,7 @@ const Bloc1a = () => {
       >
         <RightColumn />
       </Section>
+      <script src="js/bloc-1a-onload.js"></script>
     </>
   );
 };

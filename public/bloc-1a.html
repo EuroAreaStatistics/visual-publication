@@ -2,24 +2,25 @@
 <html lang="en" dir="ltr" class="no-js">
   <head>
     <meta charset="utf-8" />
-    <title>1.1 Cash</title>
+    <title>1.1 What is meant by inflation?</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="This website explains the ECB’s definition of money, the types of bank financing for households and companies and the monetary policy tools in the euro area."
-    />
+    <meta name="description" content="Inflation" />
     <meta
       name="keywords"
-      content="Statistics, Money, Credit, European Central Bank, ECB, Interest rate, Financing, Monetary policy, Euro area, Volume, Price, Comparison, Inflation, Deposit, Loan, Household, Company"
+      content="Statistics, Money, European Central Bank, ECB, Monetary policy, Euro area, Price, Comparison, Inflation, Household, Consumption, Expenditure, Products, Goods, Services, HICP, CPI, Consumer price index, Harmonised index of consumer prices, Inflation calculator, Personal inflation, Compare inflation, Inflation statistics, Consumption basket, Inflation perception, Personal inflation calculator, Inflation measure, Price stability"
     />
     <meta name="author" content="European Central Bank" />
+    <link rel="icon" href="data:," />
     <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="css/app.fa4f708786.css" />
     <link rel="stylesheet" href="css/animsition.min.css" />
-    <link rel="stylesheet" href="css/app.d1346986c6.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/jquery.webui-popover.css" />
     <script src="js/vendor/promise-polyfill.min.js"></script>
     <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/l10n.js"></script>
+    <script src="l10n/localisations.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/bloc-1a.js"></script>
   </head>
 
   <body>
@@ -97,7 +98,7 @@
               </li>
               <div
                 class="reveal large"
-                style="font-size: 14px; overflow-y: auto"
+                style="font-size: 14px; overflow-y: auto;"
                 id="infoModal"
                 data-reveal=""
               >
@@ -108,59 +109,97 @@
                     >
                   </h3>
                   <div data-trans-id="components.Info.text">
-                    <p>
-                      Money, credit and central bank interest rates is a digital
-                      publication produced by European Central Bank and the
+                    <p class="MsoNormal">
+                      Statistics Insights: Inflation is an interactive
+                      publication produced by the European Central Bank and the
                       national central banks of the Eurosystem. The publication
                       aims to make it easier to understand, use and compare euro
                       area and national statistics. It presents the statistics
-                      visually, uses reader-friendly terms, is digitally
-                      reusable via the embed function and is available in 23 EU
-                      languages.
+                      visually, catering for colour blindness, uses
+                      reader-friendly terms, is digitally reusable via the embed
+                      function and is available in 23 EU languages.
                     </p>
-                    <h4>Information on data</h4>
-                    <p>
+                    <p class="MsoNormal">
+                      <strong>Information on data</strong>
+                    </p>
+                    <p class="MsoNormal">
                       The data are updated in real time and available from the
                       <a href="http://sdw.ecb.europa.eu/"
                         >Statistical Data Warehouse</a
                       >.
                     </p>
-                    <h4>Disclaimer</h4>
-                    <p>
+                    <p class="MsoNormal">
+                      The inflation data are produced by Eurostat, together with
+                      the national statistical institutes, and are available
+                      <a
+                        href="https://ec.europa.eu/eurostat/web/hicp/data/database"
+                        >here</a
+                      >.
+                    </p>
+                    <p class="MsoNormal">
+                      The data for the second chart in Section 3.1 and the
+                      charts in Section 3.2 are produced by the European
+                      Commission’s Directorate-General for Economic and
+                      Financial Affairs and are available
+                      <a
+                        href="https://ec.europa.eu/info/business-economy-euro/indicators-statistics/economic-databases/business-and-consumer-surveys/download-business-and-consumer-survey-data/time-series_en"
+                        >here</a
+                      >.
+                    </p>
+                    <p class="MsoNormal"><strong>Disclaimer</strong></p>
+                    <p class="MsoNormal">
                       Permission is hereby granted, free of charge, to any
                       person obtaining a copy of the work and associated
                       documentation files (the “Software”), to deal in the
-                      Software without restriction, including without limitation
-                      the rights to use, copy, modify, merge, publish,
-                      distribute, sublicense, and/or sell copies of the
-                      Software, and to permit persons to whom the Software is
-                      furnished to do so, subject to the following conditions
+                      Software without restriction (with the exception of the
+                      personal inflation calculator that cannot be used for any
+                      commercial purpose, including distributing, sublicensing
+                      and/or selling copies of original or modified code),
+                      including without limitation the rights to use, copy,
+                      modify, merge, publish, distribute, sublicense and/or sell
+                      copies of the Software, and to permit persons to whom the
+                      Software is furnished to do so, subject to the following
+                      conditions.
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       The software is provided “as is”, without warranty of any
                       kind.
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       In no event shall the authors or copyright holders be
                       liable for any claim, damages or other liability, whether
                       in an action of contract, tort or otherwise, arising from,
-                      out of or in connection with the Software or the use or
-                      other dealings in the software.
+                      out of or in connection with the Software or the use of or
+                      other dealings in the Software.
                     </p>
-                    <p>
-                      The Software is built upon and made available by Eurostat.
-                      See also
+                    <p class="MsoNormal">
+                      The Software is built upon and made available by Eurostat
+                      and Lietuvos bankas. See also the
                       <a href="https://ec.europa.eu/info/legal-notice_en"
                         >Eurostat Disclaimer</a
+                      >
+                      and the
+                      <a href="https://www.lb.lt/en/terms-of-use"
+                        >Terms of use of Lietuvos bankas</a
                       >.
                     </p>
-                    <p>
-                      The ECB/Eurostat does not take responsibility for any
-                      replication of the content of the Software, or any other
-                      form of redistribution.
+                    <p class="MsoNormal">
+                      The ECB/Eurostat/Lietuvos bankas take no responsibility
+                      for any replication of the content of the Software, or any
+                      other form of redistribution.
                     </p>
-                    <p>Cover photo © Ipopba/iStock</p>
-                    <p>
+                    <p class="MsoNormal">
+                      Cover photo © monticello, Xsandra, guenterguni, Rost-9D,
+                      scanrail, SergeiKorolko/iStock
+                    </p>
+                    <p class="MsoNormal">
+                      Chapter 2.2 photo “Antique refrigerator” © jgroup/iStock
+                    </p>
+                    <p class="MsoNormal">
+                      Chapter 2.2 photo “Modern household refrigerator with
+                      control display” © Grassetto/iStock
+                    </p>
+                    <p class="MsoNormal">
                       The European System of Central Banks (ESCB) is committed
                       to providing its statistics free of charge as a public
                       good of high quality irrespective of any subsequent
@@ -170,73 +209,83 @@
                       area statistics”) and that the statistics (including
                       metadata) are not modified.
                     </p>
-                    <h4>
-                      <a href="http://www.euro.ecb.europa.eu/"
+                    <p class="MsoNormal">
+                      &nbsp;<a href="http://www.euro.ecb.europa.eu/"
                         >The Eurosystem</a
                       >
-                    </h4>
-                    <p>
+                    </p>
+                    <p class="MsoNormal">
                       <a href="http://www.nbb.be/"
                         >Nationale Bank van België/Banque Nationale de
                         Belgique</a
                       >
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       <a href="http://www.bundesbank.de/"
                         >Deutsche Bundesbank</a
                       >
                     </p>
-                    <p><a href="http://www.eestipank.ee/">Eesti Pank</a></p>
-                    <p>
+                    <p class="MsoNormal">
+                      <a href="http://www.eestipank.ee/">Eesti Pank</a>
+                    </p>
+                    <p class="MsoNormal">
                       <a href="http://www.centralbank.ie/"
                         >Central Bank of Ireland</a
                       >
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       <a href="http://www.bankofgreece.gr/">Bank of Greece</a>
                     </p>
-                    <p><a href="http://www.bde.es/">Banco de España</a></p>
-                    <p>
+                    <p class="MsoNormal">
+                      <a href="http://www.bde.es/">Banco de España</a>
+                    </p>
+                    <p class="MsoNormal">
                       <a href="http://www.banque-france.fr/"
                         >Banque de France</a
                       >
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       <a href="http://www.bancaditalia.it/">Banca d’Italia</a>
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       <a href="https://www.centralbank.cy/"
                         >Central Bank of Cyprus</a
                       >
                     </p>
-                    <p><a href="http://www.bank.lv/">Latvijas Banka</a></p>
-                    <p><a href="http://www.lb.lt/">Lietuvos bankas</a></p>
-                    <p>
+                    <p class="MsoNormal">
+                      <a href="http://www.bank.lv/">Latvijas Banka</a>
+                    </p>
+                    <p class="MsoNormal">
+                      <a href="http://www.lb.lt/">Lietuvos bankas</a>
+                    </p>
+                    <p class="MsoNormal">
                       <a href="http://www.bcl.lu/"
                         >Banque centrale du Luxembourg</a
                       >
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       <a href="http://www.centralbankmalta.org/"
-                        >Bank Ċentrali ta’ Malta/CentralBank of Malta</a
+                        >Bank Ċentrali ta’ Malta/Central Bank of Malta</a
                       >
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       <a href="http://www.dnb.nl/">De Nederlandsche Bank</a>
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       <a href="http://www.oenb.at/"
                         >Oesterreichische Nationalbank</a
                       >
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       <a href="http://www.bportugal.pt/">Banco de Portugal</a>
                     </p>
-                    <p><a href="http://www.bsi.si/">Banka Slovenije</a></p>
-                    <p>
+                    <p class="MsoNormal">
+                      <a href="http://www.bsi.si/">Banka Slovenije</a>
+                    </p>
+                    <p class="MsoNormal">
                       <a href="http://www.nbs.sk/">Národná banka Slovenska</a>
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       <a href="http://www.suomenpankki.fi/"
                         >Suomen Pankki – Finlands Bank</a
                       >
@@ -266,7 +315,7 @@
               class="has-tip left"
               data-disable-hover="false"
               tabindex="4"
-              title="1. Money"
+              title="1. What is inflation?"
               data-trans-id="pages.Bloc1.title"
               data-trans-attr="title"
             ></a>
@@ -279,7 +328,7 @@
                   class="has-tip right"
                   data-disable-hover="false"
                   tabindex="4"
-                  title="1.1 Cash"
+                  title="1.1 What is meant by inflation?"
                   data-trans-id="pages.Bloc1a.title"
                   data-trans-attr="title"
                 ></a>
@@ -292,7 +341,7 @@
                   class="has-tip right"
                   data-disable-hover="false"
                   tabindex="4"
-                  title="1.2 Deposits"
+                  title="1.2 Inflation across countries"
                   data-trans-id="pages.Bloc1b.title"
                   data-trans-attr="title"
                 ></a>
@@ -305,7 +354,7 @@
                   class="has-tip right"
                   data-disable-hover="false"
                   tabindex="4"
-                  title="1.3 Measures of money"
+                  title="1.3 Inflation over time"
                   data-trans-id="pages.Bloc1c.title"
                   data-trans-attr="title"
                 ></a>
@@ -324,12 +373,12 @@
               class="has-tip left"
               data-disable-hover="false"
               tabindex="4"
-              title="2. Credit"
+              title="2. How is inflation measured?"
               data-trans-id="pages.Bloc2.title"
               data-trans-attr="title"
             ></a>
             <ul class="submenu submenu2">
-              <li class="submenuBtn5">
+              <li class="submenuBtn4">
                 <a
                   href="bloc-2a.html"
                   data-tooltip=""
@@ -337,12 +386,12 @@
                   class="has-tip right"
                   data-disable-hover="false"
                   tabindex="4"
-                  title="2.1 Bank loans to households"
+                  title="2.1 The Harmonised Index of Consumer Prices"
                   data-trans-id="pages.Bloc2a.title"
                   data-trans-attr="title"
                 ></a>
               </li>
-              <li class="submenuBtn6">
+              <li class="submenuBtn5">
                 <a
                   href="bloc-2b.html"
                   data-tooltip=""
@@ -350,7 +399,7 @@
                   class="has-tip right"
                   data-disable-hover="false"
                   tabindex="4"
-                  title="2.2 Bank loans to companies"
+                  title="2.2 How are prices collected?"
                   data-trans-id="pages.Bloc2b.title"
                   data-trans-attr="title"
                 ></a>
@@ -369,8 +418,53 @@
               class="has-tip left"
               data-disable-hover="false"
               tabindex="4"
-              title="3. Central bank interest rates"
-              data-trans-id="pages.Bloc3a.title"
+              title="3. Officially measured inflation and perceived inflation"
+              data-trans-id="pages.Bloc3.title"
+              data-trans-attr="title"
+            ></a>
+            <ul class="submenu submenu3">
+              <li class="submenuBtn6">
+                <a
+                  href="bloc-3a.html"
+                  data-tooltip=""
+                  aria-haspopup="true"
+                  class="has-tip right"
+                  data-disable-hover="false"
+                  tabindex="4"
+                  title="&nbsp;3.1 Why does perceived inflation differ from real inflation?"
+                  data-trans-id="pages.Bloc3a.title"
+                  data-trans-attr="title"
+                ></a>
+              </li>
+              <li class="submenuBtn7">
+                <a
+                  href="bloc-3b.html"
+                  data-tooltip=""
+                  aria-haspopup="true"
+                  class="has-tip right"
+                  data-disable-hover="false"
+                  tabindex="4"
+                  title="3.2 Inflation perceptions are normally higher than measured inflation"
+                  data-trans-id="pages.Bloc3b.title"
+                  data-trans-attr="title"
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="shade-4">
+            <span class="chapterTitle"
+              ><span data-trans-id="components.Menu.chapter4"
+                >Chapter 4</span
+              ></span
+            ><a
+              href="bloc-4a.html"
+              data-tooltip=""
+              aria-haspopup="true"
+              class="has-tip left"
+              data-disable-hover="false"
+              tabindex="4"
+              title="4. Personal inflation calculator"
+              data-trans-id="pages.Bloc4a.title"
               data-trans-attr="title"
             ></a>
           </div>
@@ -431,28 +525,30 @@
               </li>
               <li class="has-submenu">
                 <a href="bloc-1.html"
-                  ><span style="padding-left: 16px"></span
-                  ><span data-trans-id="pages.Bloc1.title">1. Money</span></a
+                  ><span style="padding-left: 16px;"></span
+                  ><span data-trans-id="pages.Bloc1.title"
+                    >1. What is inflation?</span
+                  ></a
                 >
                 <ul class="submenu menu vertical nested" data-submenu="">
                   <li>
                     <a href="bloc-1a.html"
                       ><span data-trans-id="pages.Bloc1a.title"
-                        >1.1 Cash</span
+                        >1.1 What is meant by inflation?</span
                       ></a
                     >
                   </li>
                   <li>
                     <a href="bloc-1b.html"
                       ><span data-trans-id="pages.Bloc1b.title"
-                        >1.2 Deposits</span
+                        >1.2 Inflation across countries</span
                       ></a
                     >
                   </li>
                   <li>
                     <a href="bloc-1c.html"
                       ><span data-trans-id="pages.Bloc1c.title"
-                        >1.3 Measures of money</span
+                        >1.3 Inflation over time</span
                       ></a
                     >
                   </li>
@@ -460,21 +556,23 @@
               </li>
               <li class="has-submenu">
                 <a href="bloc-2.html"
-                  ><span style="padding-left: 16px"></span
-                  ><span data-trans-id="pages.Bloc2.title">2. Credit</span></a
+                  ><span style="padding-left: 16px;"></span
+                  ><span data-trans-id="pages.Bloc2.title"
+                    >2. How is inflation measured?</span
+                  ></a
                 >
                 <ul class="submenu menu vertical nested" data-submenu="">
                   <li>
                     <a href="bloc-2a.html"
                       ><span data-trans-id="pages.Bloc2a.title"
-                        >2.1 Bank loans to households</span
+                        >2.1 The Harmonised Index of Consumer Prices</span
                       ></a
                     >
                   </li>
                   <li>
                     <a href="bloc-2b.html"
                       ><span data-trans-id="pages.Bloc2b.title"
-                        >2.2 Bank loans to companies</span
+                        >2.2 How are prices collected?</span
                       ></a
                     >
                   </li>
@@ -482,9 +580,36 @@
               </li>
               <li class="has-submenu">
                 <a href="bloc-3.html"
-                  ><span style="padding-left: 16px"></span
-                  ><span data-trans-id="pages.Bloc3a.title"
-                    >3. Central bank interest rates</span
+                  ><span style="padding-left: 16px;"></span
+                  ><span data-trans-id="pages.Bloc3.title"
+                    >3. Officially measured inflation and perceived
+                    inflation</span
+                  ></a
+                >
+                <ul class="submenu menu vertical nested" data-submenu="">
+                  <li>
+                    <a href="bloc-3a.html"
+                      ><span data-trans-id="pages.Bloc3a.title"
+                        >&nbsp;3.1 Why does perceived inflation differ from real
+                        inflation?</span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="bloc-3b.html"
+                      ><span data-trans-id="pages.Bloc3b.title"
+                        >3.2 Inflation perceptions are normally higher than
+                        measured inflation</span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a href="bloc-4a.html"
+                  ><span style="padding-left: 16px;"></span
+                  ><span data-trans-id="pages.Bloc4a.title"
+                    >4. Personal inflation calculator</span
                   ></a
                 >
               </li>
@@ -500,7 +625,7 @@
                 class="reveal large"
                 id="infoModal2"
                 data-reveal=""
-                style="overflow-y: auto"
+                style="overflow-y: auto;"
               >
                 <div class="small-8 small-centered columns">
                   <h3 class="text-center">
@@ -509,59 +634,97 @@
                     >
                   </h3>
                   <div data-trans-id="components.Info.text">
-                    <p>
-                      Money, credit and central bank interest rates is a digital
-                      publication produced by European Central Bank and the
+                    <p class="MsoNormal">
+                      Statistics Insights: Inflation is an interactive
+                      publication produced by the European Central Bank and the
                       national central banks of the Eurosystem. The publication
                       aims to make it easier to understand, use and compare euro
                       area and national statistics. It presents the statistics
-                      visually, uses reader-friendly terms, is digitally
-                      reusable via the embed function and is available in 23 EU
-                      languages.
+                      visually, catering for colour blindness, uses
+                      reader-friendly terms, is digitally reusable via the embed
+                      function and is available in 23 EU languages.
                     </p>
-                    <h4>Information on data</h4>
-                    <p>
+                    <p class="MsoNormal">
+                      <strong>Information on data</strong>
+                    </p>
+                    <p class="MsoNormal">
                       The data are updated in real time and available from the
                       <a href="http://sdw.ecb.europa.eu/"
                         >Statistical Data Warehouse</a
                       >.
                     </p>
-                    <h4>Disclaimer</h4>
-                    <p>
+                    <p class="MsoNormal">
+                      The inflation data are produced by Eurostat, together with
+                      the national statistical institutes, and are available
+                      <a
+                        href="https://ec.europa.eu/eurostat/web/hicp/data/database"
+                        >here</a
+                      >.
+                    </p>
+                    <p class="MsoNormal">
+                      The data for the second chart in Section 3.1 and the
+                      charts in Section 3.2 are produced by the European
+                      Commission’s Directorate-General for Economic and
+                      Financial Affairs and are available
+                      <a
+                        href="https://ec.europa.eu/info/business-economy-euro/indicators-statistics/economic-databases/business-and-consumer-surveys/download-business-and-consumer-survey-data/time-series_en"
+                        >here</a
+                      >.
+                    </p>
+                    <p class="MsoNormal"><strong>Disclaimer</strong></p>
+                    <p class="MsoNormal">
                       Permission is hereby granted, free of charge, to any
                       person obtaining a copy of the work and associated
                       documentation files (the “Software”), to deal in the
-                      Software without restriction, including without limitation
-                      the rights to use, copy, modify, merge, publish,
-                      distribute, sublicense, and/or sell copies of the
-                      Software, and to permit persons to whom the Software is
-                      furnished to do so, subject to the following conditions
+                      Software without restriction (with the exception of the
+                      personal inflation calculator that cannot be used for any
+                      commercial purpose, including distributing, sublicensing
+                      and/or selling copies of original or modified code),
+                      including without limitation the rights to use, copy,
+                      modify, merge, publish, distribute, sublicense and/or sell
+                      copies of the Software, and to permit persons to whom the
+                      Software is furnished to do so, subject to the following
+                      conditions.
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       The software is provided “as is”, without warranty of any
                       kind.
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       In no event shall the authors or copyright holders be
                       liable for any claim, damages or other liability, whether
                       in an action of contract, tort or otherwise, arising from,
-                      out of or in connection with the Software or the use or
-                      other dealings in the software.
+                      out of or in connection with the Software or the use of or
+                      other dealings in the Software.
                     </p>
-                    <p>
-                      The Software is built upon and made available by Eurostat.
-                      See also
+                    <p class="MsoNormal">
+                      The Software is built upon and made available by Eurostat
+                      and Lietuvos bankas. See also the
                       <a href="https://ec.europa.eu/info/legal-notice_en"
                         >Eurostat Disclaimer</a
+                      >
+                      and the
+                      <a href="https://www.lb.lt/en/terms-of-use"
+                        >Terms of use of Lietuvos bankas</a
                       >.
                     </p>
-                    <p>
-                      The ECB/Eurostat does not take responsibility for any
-                      replication of the content of the Software, or any other
-                      form of redistribution.
+                    <p class="MsoNormal">
+                      The ECB/Eurostat/Lietuvos bankas take no responsibility
+                      for any replication of the content of the Software, or any
+                      other form of redistribution.
                     </p>
-                    <p>Cover photo © Ipopba/iStock</p>
-                    <p>
+                    <p class="MsoNormal">
+                      Cover photo © monticello, Xsandra, guenterguni, Rost-9D,
+                      scanrail, SergeiKorolko/iStock
+                    </p>
+                    <p class="MsoNormal">
+                      Chapter 2.2 photo “Antique refrigerator” © jgroup/iStock
+                    </p>
+                    <p class="MsoNormal">
+                      Chapter 2.2 photo “Modern household refrigerator with
+                      control display” © Grassetto/iStock
+                    </p>
+                    <p class="MsoNormal">
                       The European System of Central Banks (ESCB) is committed
                       to providing its statistics free of charge as a public
                       good of high quality irrespective of any subsequent
@@ -571,73 +734,83 @@
                       area statistics”) and that the statistics (including
                       metadata) are not modified.
                     </p>
-                    <h4>
-                      <a href="http://www.euro.ecb.europa.eu/"
+                    <p class="MsoNormal">
+                      &nbsp;<a href="http://www.euro.ecb.europa.eu/"
                         >The Eurosystem</a
                       >
-                    </h4>
-                    <p>
+                    </p>
+                    <p class="MsoNormal">
                       <a href="http://www.nbb.be/"
                         >Nationale Bank van België/Banque Nationale de
                         Belgique</a
                       >
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       <a href="http://www.bundesbank.de/"
                         >Deutsche Bundesbank</a
                       >
                     </p>
-                    <p><a href="http://www.eestipank.ee/">Eesti Pank</a></p>
-                    <p>
+                    <p class="MsoNormal">
+                      <a href="http://www.eestipank.ee/">Eesti Pank</a>
+                    </p>
+                    <p class="MsoNormal">
                       <a href="http://www.centralbank.ie/"
                         >Central Bank of Ireland</a
                       >
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       <a href="http://www.bankofgreece.gr/">Bank of Greece</a>
                     </p>
-                    <p><a href="http://www.bde.es/">Banco de España</a></p>
-                    <p>
+                    <p class="MsoNormal">
+                      <a href="http://www.bde.es/">Banco de España</a>
+                    </p>
+                    <p class="MsoNormal">
                       <a href="http://www.banque-france.fr/"
                         >Banque de France</a
                       >
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       <a href="http://www.bancaditalia.it/">Banca d’Italia</a>
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       <a href="https://www.centralbank.cy/"
                         >Central Bank of Cyprus</a
                       >
                     </p>
-                    <p><a href="http://www.bank.lv/">Latvijas Banka</a></p>
-                    <p><a href="http://www.lb.lt/">Lietuvos bankas</a></p>
-                    <p>
+                    <p class="MsoNormal">
+                      <a href="http://www.bank.lv/">Latvijas Banka</a>
+                    </p>
+                    <p class="MsoNormal">
+                      <a href="http://www.lb.lt/">Lietuvos bankas</a>
+                    </p>
+                    <p class="MsoNormal">
                       <a href="http://www.bcl.lu/"
                         >Banque centrale du Luxembourg</a
                       >
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       <a href="http://www.centralbankmalta.org/"
-                        >Bank Ċentrali ta’ Malta/CentralBank of Malta</a
+                        >Bank Ċentrali ta’ Malta/Central Bank of Malta</a
                       >
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       <a href="http://www.dnb.nl/">De Nederlandsche Bank</a>
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       <a href="http://www.oenb.at/"
                         >Oesterreichische Nationalbank</a
                       >
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       <a href="http://www.bportugal.pt/">Banco de Portugal</a>
                     </p>
-                    <p><a href="http://www.bsi.si/">Banka Slovenije</a></p>
-                    <p>
+                    <p class="MsoNormal">
+                      <a href="http://www.bsi.si/">Banka Slovenije</a>
+                    </p>
+                    <p class="MsoNormal">
                       <a href="http://www.nbs.sk/">Národná banka Slovenska</a>
                     </p>
-                    <p>
+                    <p class="MsoNormal">
                       <a href="http://www.suomenpankki.fi/"
                         >Suomen Pankki – Finlands Bank</a
                       >
@@ -661,7 +834,6 @@
         <script src="l10n/localisations.js"></script>
         <script src="js/lang.js"></script>
         <script src="js/menu.js"></script>
-        <script src="js/menu-onload.js"></script>
       </div>
       <div class="wide-section bloc">
         <div class="bloc-full">
@@ -670,112 +842,156 @@
               <div class="panel">
                 <div class="row">
                   <h3>
-                    <span data-trans-id="pages.Bloc1.title">1. Money</span>
+                    <span data-trans-id="pages.Bloc1.title"
+                      >1. What is inflation?</span
+                    >
                   </h3>
                   <div data-trans-id="pages.Bloc1.text">
-                    <p>
-                      When we think of money, we generally think of cash in our
-                      wallet, the balance of our bank account or the payments we
-                      make. But what does money do in the economy, and what does
-                      money mean for central banks?
+                    <p class="MsoNormal">
+                      We all care about the prices of the goods and services
+                      that we buy. It also matters to us how much prices change
+                      over time. And the economy tends to work best when prices
+                      are relatively stable. Inflation is at the heart of these
+                      issues. But what is it exactly? And what are the reasons
+                      for differences in inflation rates across countries and
+                      over time?
                     </p>
-                    <p>
-                      Money serves three different functions in the economy: (1)
-                      it is a medium of exchange with a value that is trusted by
-                      everyone, (2) it is a unit of account that enables prices
-                      to be set for goods and services, and (3) it is a store of
-                      value that can be saved for later use.
-                    </p>
-                    <p>
-                      In central bank statistics, broadly speaking, money is
-                      composed of cash in circulation and deposits.
-                    </p>
-                    <p>
-                      The next two sections provide a brief explanation of cash
-                      and deposits and present related statistics produced by
-                      the ECB. The third section describes how the ECB measures
-                      the amount of money in the euro area economy using
-                      “monetary aggregates”.
+                    <p class="MsoNormal">
+                      The next three sections try to answer these questions.
+                      Section 1.1 introduces the concept of inflation, Section
+                      1.2 explains cross-country differences in inflation rates
+                      and Section 1.3 looks at inflation over time. Each section
+                      includes interactive charts that allow you to learn more
+                      about inflation statistics.
                     </p>
                   </div>
                   <h3>
-                    <span data-trans-id="pages.Bloc1a.title">1.1 Cash</span>
+                    <span data-trans-id="pages.Bloc1a.title"
+                      >1.1 What is meant by inflation?</span
+                    >
                   </h3>
                   <div data-trans-id="pages.Bloc1a.text">
-                    <p>
-                      The most basic and intuitive form of money is cash –
-                      banknotes and coins.
+                    <p class="MsoNormal">
+                      Inflation is a key phenomenon in the economy. But what is
+                      it? It is all to do with money and prices.
                     </p>
-                    <p>
-                      The nature of cash has evolved over time. In the early
-                      days, it usually took the form of commodity money – an
-                      object made from something that had its own market value,
-                      such as coins made from gold. Later, commodity money was
-                      replaced by representative money, such as banknotes, that
-                      could be swapped for a certain fixed amount of gold or
-                      silver. Modern economies, including the euro area, are
-                      based on fiat money. This is money that is declared legal
-                      tender and issued by a central bank. Rather than relying
-                      on a substance or commodity, such as gold, to provide its
-                      underlying value, fiat money is widely accepted because
-                      people trust the central bank to keep the value of money
-                      stable over time.
+                    <p class="MsoNormal">
+                      Each product in the market has a price, which is expressed
+                      in money. Without money, products would have to be
+                      exchanged for other products based on their “real value”.
+                      The real value of a product, also called its relative
+                      price, would thus be defined in terms of other products
+                      (e.g. a loaf of bread might be exchanged for – i.e.
+                      equivalent to – two litres of milk). Money serves as the
+                      “unit of account” that allows the real value of every
+                      product to be expressed at its “nominal price”. When we
+                      talk about prices in the economy, we are referring to
+                      nominal prices.
                     </p>
-                    <h4>1.1.1 Euro banknotes and coins</h4>
-                    <p>
-                      The legal tender of the euro area is the euro. More than
-                      342 million people use it as the single currency in the 19
-                      EU Member States comprising the euro area. This makes the
-                      euro a tangible symbol of European integration.
+                    <p class="MsoNormal">
+                      Prices of products can change over time, as both supply
+                      and demand change. In the case of supply, a good harvest
+                      increases the supply of corn and its price may decrease,
+                      while a bad harvest leads to scarce supply and rising corn
+                      prices. In the case of demand, fashions and consumption
+                      trends increase demand for popular brands and products,
+                      which may drive up their prices, while the prices of less
+                      popular products may fall.
                     </p>
-                    <p>
-                      Legally, euro banknotes are issued by the Eurosystem,
-                      which is made up of the European Central Bank (ECB) and
-                      the national central banks of the euro area countries. In
-                      practice, however, it is only the national central banks
-                      that actually issue euro banknotes and withdraw them from
-                      circulation. The ECB does not have a cash office. The
-                      legal issuers of euro coins are the national governments
-                      of euro area countries.
+                    <p class="MsoNormal">
+                      As well as supply and demand, the amount of money in
+                      circulation also has an impact on prices. The greater the
+                      amount of money circulating in the economy, the higher the
+                      risk of wide-ranging increases in prices. This would
+                      change the general price level in the economy. And that is
+                      precisely what inflation is about, namely changes in the
+                      general price level.
                     </p>
-                    <p>
-                      After they have been issued, banknotes enter into
-                      circulation by being supplied over the counter by banks or
-                      via cash dispensers. Unless they are kept as a store of
-                      value, they are used for payments, returned to banks and
-                      recirculated until they become unfit (damaged or worn), at
-                      which point they are withdrawn from circulation by the
-                      national central banks.
+                    <p class="MsoNormal">
+                      Inflation is the general increase in the overall price
+                      level of goods and services typically bought by citizens
+                      (or “households”, to use the statistical term). It is
+                      measured as the average price change over a given period
+                      of time for a basket of goods and services that are
+                      typically bought in the economy. In the euro area, it is
+                      measured as changes in the Harmonised Index of Consumer
+                      Prices (HICP) compared with the same period one year
+                      earlier (“year-on-year” changes). See Chapter 2 for
+                      details on the HICP.
                     </p>
-                    <p>
-                      Further information about euro banknotes and coins is
-                      available in the euro section of the ECB’s
+                    <p><strong>1.1.1 Why does inflation matter?</strong></p>
+                    <p class="MsoNormal">
+                      Inflation affects us all, because increases in the general
+                      price level mean that the value of money decreases. In
+                      other words, you need to pay more money than before to buy
+                      the same products and services. High inflation is usually
+                      bad for individual citizens (or households) because it
+                      erodes their “purchasing power”, but it is also harmful
+                      for the economy as a whole and can reduce economic
+                      activity. Society also suffers because high inflation can
+                      increase inequality. Households on low or fixed incomes
+                      are often hit hardest because they are less likely to
+                      safeguard themselves against inflation.
+                    </p>
+                    <p class="MsoNormal">
+                      But falling prices and “negative” inflation rates are not
+                      good either. The opposite of inflation is deflation, which
+                      is a sustained and general fall in the overall price
+                      level. This is just as harmful and costly to the economy
+                      as inflation. Continuously falling prices create a vicious
+                      circle for the economy. If we expect prices to fall, we
+                      tend to postpone today’s purchases to take advantage of
+                      lower prices tomorrow. And if everybody does this, the
+                      economy could grind to a halt. If businesses are not able
+                      to sell their products and services, they may need to lay
+                      off staff. When people lose their jobs, they spend even
+                      less.
+                    </p>
+                    <p class="MsoNormal">
+                      Stable prices are therefore best for the economy, and this
+                      is why the ECB and other central banks have the task of
+                      maintaining
                       <a
-                        href="https://www.ecb.europa.eu/home/html/index.en.html"
-                        >website</a
-                      >.
+                        href="https://www.ecb.europa.eu/explainers/tell-me-more/html/stableprices.en.html"
+                        >price stability</a
+                      >. However, price stability does not mean that prices do
+                      not increase at all. Rather, it means a positive but low
+                      inflation rate, with small, gradual increases in the
+                      general price level.
                     </p>
-                    <h4>1.1.2 Banknote and coin statistics</h4>
-                    <p>
-                      <a href="https://sdw.ecb.europa.eu/browse.do?node=9691111"
-                        >Statistics about euro banknote and coin circulation</a
-                      >
-                      are produced on a monthly basis and can be found in the
-                      ECB’s Statistical Data Warehouse.
+                    <p class="MsoNormal">
+                      Price increases should be small enough not to create
+                      problems for people and businesses but large enough to
+                      create a sufficient buffer for the economy against
+                      deflation. For instance, in a severe downturn – what
+                      experts call a recession – inflation tends to fall as the
+                      economy contracts. And if inflation is already too low
+                      when a recession hits, there is a risk that it will fall
+                      below zero. In addition, positive but low inflation acts
+                      as a buffer for small measurement uncertainties. Hence, by
+                      aiming for slightly positive inflation, central banks have
+                      a safety margin against deflation.
                     </p>
-                    <p>
-                      Low and medium-value notes (€5, €10, €20 and €50) are
-                      mostly used for day-to-day payments. Higher denominations
-                      (€100 and €200 – as well as €500 banknotes which are no
-                      longer issued but remain valid legal tender) are mainly
-                      used for expensive purchases and kept as a store of value.
+                    <p><strong>1.1.2 Inflation statistics</strong></p>
+                    <p class="MsoNormal">
+                      Individual goods and services – and groups of goods or
+                      services – have different inflation rates. For an overview
+                      of the increase in the general price level, inflation is
+                      therefore measured using a shopping basket containing the
+                      goods and services typically bought by households.
                     </p>
-                    <p>
-                      The total number of banknotes in circulation stood at
-                      [Value 1]&nbsp;billion with an overall value of €[Value
-                      2]&nbsp;trillion&nbsp;in [Date 1]. The number of euro
-                      coins in circulation totalled [Value 3] billion and their
-                      overall value was €[Value 4] billion.
+                    <p class="MsoNormal">
+                      For example, in [Date 1] the euro area inflation rate for
+                      “food and non-alcoholic beverages” was [Value 1]% and the
+                      rate for “clothing and footwear” was [Value 2]%. The
+                      overall inflation rate in the euro area was [Value 3]% in
+                      the same month.
+                    </p>
+                    <p class="MsoNormal">
+                      You can use the interactive visuals to see the inflation
+                      rate for your country and for each category of goods and
+                      services. You can also compare inflation rates for
+                      different countries and categories.
                     </p>
                   </div>
                 </div>
@@ -814,7 +1030,7 @@
                   <div class="small-6 columns text-right">
                     <a href="bloc-1b.html"
                       ><span data-trans-id="pages.Bloc1b.title"
-                        >1.2 Deposits</span
+                        >1.2 Inflation across countries</span
                       ><i class="fa fa-arrow-right"></i
                     ></a>
                   </div>
@@ -823,60 +1039,56 @@
             </div>
             <div class="medium-6 columns bloc-right" data-equalizer-watch="">
               <div class="panel">
-                <h3>
-                  <span data-trans-id="pages.Bloc1a.infographics1"
-                    >Number of banknotes and coins in circulation</span
+                <div class="row">
+                  <div class="iframeContainer">
+                    <iframe
+                      style="height: 800px;"
+                      id="linechart_simple1"
+                      src="vis/chapter11_1/index.html?simple=simple"
+                      title="&lt;p&gt;Inflation rates&lt;/p&gt;"
+                      data-trans-id="pages.Bloc1a.infographics1"
+                      data-trans-attr="title"
+                    ></iframe>
+                  </div>
+                  <p class="compareCountry">
+                    <span data-trans-id="pages.Bloc1a.infographicsCaption1"
+                      >Click to interact and compare countries</span
+                    >
+                  </p>
+                  <div class="social-menu embed-menu text-center">
+                    <button
+                      class="embed vis1"
+                      title="Embed"
+                      data-trans-id="components.buttons.embed"
+                      data-trans-attr="title"
+                    >
+                      <span
+                        aria-hidden="true"
+                        class="fa fa-code"
+                      ></span></button
+                    ><button
+                      class="mail vis1"
+                      title="Email"
+                      data-trans-id="components.buttons.mail"
+                      data-trans-attr="title"
+                    >
+                      <span aria-hidden="true" class="fa fa-envelope"></span>
+                    </button>
+                  </div>
+                  <div
+                    class="reveal large text-center"
+                    id="ModalIframe1"
+                    data-reveal=""
                   >
-                </h3>
-                <div class="iframeContainer">
-                  <iframe
-                    style="height: 360px; max-height: 360px"
-                    id="Iframe1"
-                    data-height="0.6"
-                    data-body-click=""
-                    src="vis/chapter11_1/index.html?simple=simple"
-                    title="Number of banknotes and coins in circulation"
-                    data-trans-id="pages.Bloc1a.infographics1"
-                    data-trans-attr="title"
-                  ></iframe>
-                </div>
-                <p class="compareCountry">
-                  <span data-trans-id="pages.Bloc1a.infographicsCaption1"
-                    >Click to enlarge and for breakdowns</span
-                  >
-                </p>
-                <div class="social-menu embed-menu text-center">
-                  <button
-                    class="embed"
-                    data-iframe="Iframe1"
-                    title="Embed"
-                    data-trans-id="components.buttons.embed"
-                    data-trans-attr="title"
-                  >
-                    <span aria-hidden="true" class="fa fa-code"></span></button
-                  ><button
-                    class="mail"
-                    data-iframe="Iframe1"
-                    title="Email"
-                    data-trans-id="components.buttons.mail"
-                    data-trans-attr="title"
-                  >
-                    <span aria-hidden="true" class="fa fa-envelope"></span>
-                  </button>
-                </div>
-                <div
-                  class="reveal large text-center"
-                  data-iframe="Iframe1"
-                  data-reveal=""
-                >
-                  <button
-                    class="close-button"
-                    data-close=""
-                    aria-label="Close modal"
-                    type="button"
-                  >
-                    <span aria-hidden="true" data-reset-on-close="">×</span>
-                  </button>
+                    <button
+                      class="close-button"
+                      data-close=""
+                      aria-label="Close modal"
+                      type="button"
+                    >
+                      <span aria-hidden="true" data-reset-on-close="">×</span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -885,15 +1097,11 @@
       </div>
     </div>
     <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/l10n.js"></script>
-    <script src="l10n/localisations.js"></script>
-    <script src="js/lang.js"></script>
-    <script src="js/bloc-1a.js"></script>
     <script src="js/app.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="js/jquery.webui-popover.min.js"></script>
-    <script src="js/animsition.min.js"></script>
-    <script src="js/animsition-onload.js"></script>
-    <script src="js/section-onload.js"></script>
+    <script src="js/animsition.js"></script>
+    <script src="js/menu-onload.js"></script>
+    <script src="js/bloc-1a-onload.js"></script>
   </body>
 </html>

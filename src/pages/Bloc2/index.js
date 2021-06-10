@@ -48,7 +48,7 @@ const Bloc2 = () => {
                       </div>
                       <div className="medium-4 text-center columns">
                         <Trans attr="alt" message={messages.title}>
-                          <img src="images/bloc-2/main.svg" width="100" />
+                          <img src="images/icones/chapter-2.svg" width="100" />
                         </Trans>
                       </div>
                       <div className="medium-12 columns">
@@ -80,7 +80,10 @@ const Bloc2 = () => {
                       </div>
                       <div className="medium-4 text-center columns">
                         <Trans attr="alt" message={bloc2a.title}>
-                          <img src="images/bloc-2/section-1.svg" width="100" />
+                          <img
+                            src="images/icones/chapter-2-1.svg"
+                            width="100"
+                          />
                         </Trans>
                       </div>
                       <div className="medium-12 columns">
@@ -113,7 +116,10 @@ const Bloc2 = () => {
                       </div>
                       <div className="medium-4 text-center columns">
                         <Trans attr="alt" message={bloc2b.title}>
-                          <img src="images/bloc-2/section-2.svg" width="100" />
+                          <img
+                            src="images/icones/chapter-2-2.svg"
+                            width="100"
+                          />
                         </Trans>
                       </div>
                       <div className="medium-12 columns">
@@ -139,8 +145,8 @@ const Bloc2 = () => {
       <script src="js/bloc-2.js"></script>
       <script src="js/modernizr.custom.js"></script>
       <script src="js/jquery.webui-popover.min.js"></script>
-      <script src="js/animsition.min.js"></script>
-      <script src="js/animsition-onload.js"></script>
+      <script src="js/animsition.js"></script>
+      <script src="js/menu-onload.js"></script>
     </>
   );
 };

@@ -11,7 +11,10 @@ import bloc1c from "../../pages/Bloc1c/messages";
 import bloc2 from "../../pages/Bloc2/messages";
 import bloc2a from "../../pages/Bloc2a/messages";
 import bloc2b from "../../pages/Bloc2b/messages";
+import bloc3 from "../../pages/Bloc3/messages";
 import bloc3a from "../../pages/Bloc3a/messages";
+import bloc3b from "../../pages/Bloc3b/messages";
+import bloc4a from "../../pages/Bloc4a/messages";
 
 const messages = defineMessages({
   home: "Home",
@@ -146,7 +149,7 @@ const Menu = () => {
             ></a>
           </Trans>
           <ul className="submenu submenu2">
-            <li className="submenuBtn5">
+            <li className="submenuBtn4">
               <Trans attr="title" message={bloc2a.title}>
                 <a
                   href="bloc-2a.html"
@@ -158,7 +161,7 @@ const Menu = () => {
                 ></a>
               </Trans>
             </li>
-            <li className="submenuBtn6">
+            <li className="submenuBtn5">
               <Trans attr="title" message={bloc2b.title}>
                 <a
                   href="bloc-2b.html"
@@ -180,9 +183,54 @@ const Menu = () => {
             </M>
           </span>
 
-          <Trans attr="title" message={bloc3a.title}>
+          <Trans attr="title" message={bloc3.title}>
             <a
               href="bloc-3.html"
+              data-tooltip=""
+              aria-haspopup="true"
+              className="has-tip left"
+              data-disable-hover="false"
+              tabIndex="4"
+            ></a>
+          </Trans>
+          <ul className="submenu submenu3">
+            <li className="submenuBtn6">
+              <Trans attr="title" message={bloc3a.title}>
+                <a
+                  href="bloc-3a.html"
+                  data-tooltip=""
+                  aria-haspopup="true"
+                  className="has-tip right"
+                  data-disable-hover="false"
+                  tabIndex="4"
+                ></a>
+              </Trans>
+            </li>
+            <li className="submenuBtn7">
+              <Trans attr="title" message={bloc3b.title}>
+                <a
+                  href="bloc-3b.html"
+                  data-tooltip=""
+                  aria-haspopup="true"
+                  className="has-tip right"
+                  data-disable-hover="false"
+                  tabIndex="4"
+                ></a>
+              </Trans>
+            </li>
+          </ul>
+        </div>
+
+        <div className="shade-4">
+          <span className="chapterTitle">
+            <M>
+              <FormattedHTMLMessage key="chapter4" defaultMessage="Chapter 4" />
+            </M>
+          </span>
+
+          <Trans attr="title" message={bloc4a.title}>
+            <a
+              href="bloc-4a.html"
               data-tooltip=""
               aria-haspopup="true"
               className="has-tip left"
@@ -277,7 +325,31 @@ const Menu = () => {
               <a href="bloc-3.html">
                 <span style={{ paddingLeft: 16 }} />
                 <M>
-                  <FormattedHTMLMessage {...bloc3a.title} />
+                  <FormattedHTMLMessage {...bloc3.title} />
+                </M>
+              </a>
+              <ul className="submenu menu vertical nested " data-submenu="">
+                <li>
+                  <a href="bloc-3a.html">
+                    <M>
+                      <FormattedHTMLMessage {...bloc3a.title} />
+                    </M>
+                  </a>
+                </li>
+                <li>
+                  <a href="bloc-3b.html">
+                    <M>
+                      <FormattedHTMLMessage {...bloc3b.title} />
+                    </M>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li className="has-submenu">
+              <a href="bloc-4a.html">
+                <span style={{ paddingLeft: 16 }} />
+                <M>
+                  <FormattedHTMLMessage {...bloc4a.title} />
                 </M>
               </a>
             </li>
@@ -318,7 +390,6 @@ const Menu = () => {
       <script src="l10n/localisations.js"></script>
       <script src="js/lang.js"></script>
       <script src="js/menu.js"></script>
-      <script src="js/menu-onload.js"></script>
     </div>
   );
 };

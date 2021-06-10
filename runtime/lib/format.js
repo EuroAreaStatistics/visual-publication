@@ -12,12 +12,17 @@ export const formatMonthYear = (date) =>
     ? "" +
       date.getUTCFullYear() +
       ". " +
-      ("month." + (date.getUTCMonth() + 1)).toLocaleString()
+      ("general.month." + (date.getUTCMonth() + 1)).toLocaleString()
     : String.locale === "lt"
     ? "" +
       date.getUTCFullYear() +
       " " +
-      ("month." + (date.getUTCMonth() + 1)).toLocaleString()
-    : ("month." + (date.getUTCMonth() + 1)).toLocaleString() +
+      ("general.month." + (date.getUTCMonth() + 1)).toLocaleString()
+    : ("general.month." + (date.getUTCMonth() + 1)).toLocaleString() +
       " " +
       date.getUTCFullYear();
+
+export const formatValue = (decimals, v, scale) =>
+  v === null
+    ? "missingValue".toLocaleString()
+    : formatNumber((v * (scale || 1)).toFixed(decimals));

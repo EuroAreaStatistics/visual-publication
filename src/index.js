@@ -33,10 +33,10 @@ function renderToFile(Component, file) {
     ${helmet.title.toString()}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     ${helmet.meta.toString()}
+    <link rel="icon" href="data:,">
     <link rel="stylesheet" href="css/foundation.min.css" />
-    <link rel="stylesheet" href="css/animsition.min.css" />
     <link rel="stylesheet" href="css/${manifest["app.css"]}" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/animsition.min.css" />
     ${helmet.link.toString()}
     <script src="js/vendor/promise-polyfill.min.js"></script>
     ${helmet.script.toString()}

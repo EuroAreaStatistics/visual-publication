@@ -11,18 +11,20 @@ if (lang !== "" && lang !== "") {
   }
 }
 
-$("[data-trans-id]").each(function () {
-  const trans = $(this).attr("data-trans-id");
-  const attr = $(this).attr("data-trans-attr");
-  if (attr) {
-    $(this).attr(attr, _(trans));
-  } else {
-    $(this).html(_(trans));
-  }
-});
-
 document.documentElement.lang = String.locale;
 document.title = _("pages.Bloc2.title");
 $('meta[name="description"]').attr("content", _("description"));
 $('meta[name="author"]').attr("content", _("author"));
 $('meta[name="keywords"]').attr("content", _("keywords"));
+
+$(() => {
+  $("[data-trans-id]").each(function () {
+    const trans = $(this).attr("data-trans-id");
+    const attr = $(this).attr("data-trans-attr");
+    if (attr) {
+      $(this).attr(attr, _(trans));
+    } else {
+      $(this).html(_(trans));
+    }
+  });
+});

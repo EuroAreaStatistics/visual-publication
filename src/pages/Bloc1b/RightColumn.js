@@ -9,18 +9,11 @@ import messages from "./messages";
 const RightColumn = () => {
   return (
     <div className="panel">
-      <h3>
-        <M>
-          <FormattedHTMLMessage {...messages.infographics1} />
-        </M>
-      </h3>
-
       <div className="iframeContainer">
         <Trans attr="title" message={messages.infographics1}>
           <iframe
             style={{ height: 800 }}
-            id="Iframe1"
-            data-height="0.5"
+            id="linechart_simple1"
             src="vis/chapter12_1/index.html?simple=simple"
           ></iframe>
         </Trans>
@@ -30,19 +23,19 @@ const RightColumn = () => {
         <M>
           <FormattedHTMLMessage
             key="infographicsCaption1"
-            defaultMessage="Click to interact and compare countries"
+            defaultMessage="Click to enlarge and compare countries"
           />
         </M>
       </p>
 
       <div className="social-menu embed-menu text-center">
-        <Embed iframe="Iframe1" />
-        <Mail iframe="Iframe1" />
+        <Embed className="vis1" />
+        <Mail className="vis1" />
       </div>
 
       <div
         className="reveal large text-center"
-        data-iframe="Iframe1"
+        id="ModalIframe1"
         data-reveal=""
       >
         <button
@@ -58,17 +51,10 @@ const RightColumn = () => {
       </div>
 
       <div className="row" style={{ marginTop: 10 }}>
-        <h3>
-          <M>
-            <FormattedHTMLMessage {...messages.infographics2} />
-          </M>
-        </h3>
-
-        <Trans attr="alt" message={messages.infographics2}>
+        <Trans attr="title" message={messages.infographics2}>
           <iframe
             style={{ height: 800 }}
-            id="Iframe2"
-            data-height="0.5"
+            id="linechart_simple2"
             src="vis/chapter12_2/index.html?simple=simple"
           ></iframe>
         </Trans>
@@ -77,19 +63,19 @@ const RightColumn = () => {
           <M>
             <FormattedHTMLMessage
               key="infographicsCaption2"
-              defaultMessage="Click to interact and compare countries"
+              defaultMessage="Click to enlarge and compare countries"
             />
           </M>
         </p>
         <div className="social-menu embed-menu text-center">
-          <Embed iframe="Iframe2" />
-          <Mail iframe="Iframe2" />
+          <Embed className="vis2" />
+          <Mail className="vis2" />
         </div>
       </div>
 
       <div
         className="reveal large text-center"
-        data-iframe="Iframe2"
+        id="ModalIframe2"
         data-reveal=""
       >
         <button

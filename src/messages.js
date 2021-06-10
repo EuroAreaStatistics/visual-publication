@@ -1,7 +1,7 @@
 import { defineMessages } from "react-intl";
 
 const messages = defineMessages({
-  title: "Statistics insights: Money, credit and central bank interest rates",
+  title: "Statistics Insights: Inflation",
   explore: "Explore further",
   "month.1": "January",
   "month.2": "February",
@@ -15,11 +15,10 @@ const messages = defineMessages({
   "month.10": "October",
   "month.11": "November",
   "month.12": "December",
-  description:
-    "This website explains the ECB’s definition of money, the types of bank financing for households and companies and the monetary policy tools in the euro area.",
+  description: "Inflation",
   author: "European Central Bank",
   keywords:
-    "Statistics, Money, Credit, European Central Bank, ECB, Interest rate, Financing, Monetary policy, Euro area, Volume, Price, Comparison, Inflation, Deposit, Loan, Household, Company",
+    "Statistics, Money, European Central Bank, ECB, Monetary policy, Euro area, Price, Comparison, Inflation, Household, Consumption, Expenditure, Products, Goods, Services, HICP, CPI, Consumer price index, Harmonised index of consumer prices, Inflation calculator, Personal inflation, Compare inflation, Inflation statistics, Consumption basket, Inflation perception, Personal inflation calculator, Inflation measure, Price stability",
 });
 
 export default messages;

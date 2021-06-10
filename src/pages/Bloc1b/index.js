@@ -18,6 +18,7 @@ const Bloc1b = () => {
       >
         <RightColumn />
       </Section>
+      <script src="js/bloc-1b-onload.js"></script>
     </>
   );
 };
