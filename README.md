@@ -19,5 +19,6 @@ Following are some useful commands:
 
 The data files can be updated periodically with wget, e.g.:
 ```sh
-   wget --header='Accept: application/json' -N -P public/data -nH -x --cut-dirs=2 -i public/urls.txt
+wget --header='Accept: application/json' -N -P public/data -nH -x \
+     --cut-dirs=2 -i public/urls.txt
 ```
