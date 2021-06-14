@@ -1,6 +1,8 @@
 Digital publication: Money, credit and central bank interest rates
 ==================================================================
 
+Note: to access the other existing digital publications change the branch in the menue above the code box.
+
 These are the sources used to build the digitial publication "Money, credit and central bank interest rates".
 It has been developed in JavaScript using Node.js version 12.
 The built files in the `public` folder consist of static HTML, CSS and JavaScript which can be run on any web server.
