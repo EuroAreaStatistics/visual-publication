@@ -1,6 +1,8 @@
 Digital publication: Inflation
 ==============================
 
+Note: to access the other existing digital publications change the branch in the menu above the code box.
+
 These are the sources used to build the digitial publication "Inflation".
 It has been developed in JavaScript using Node.js version 12.
 The built files in the `public` folder consist of static HTML, CSS and JavaScript which can be run on any web server.
