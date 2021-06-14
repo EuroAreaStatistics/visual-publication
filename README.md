@@ -1,7 +1,7 @@
 Digital publication: Money, credit and central bank interest rates
 ==================================================================
 
-Note: to access the other existing digital publications change the branch in the menue above the code box.
+Note: to access the other existing digital publications change the branch in the menu above the code box.
 
 These are the sources used to build the digitial publication "Money, credit and central bank interest rates".
 It has been developed in JavaScript using Node.js version 12.
