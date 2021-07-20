@@ -1,1 +1,151 @@
-vis/chapter13_1
+<!--[if IE]><!DOCTYPE html><!--><!--
+    /******************************************************************/
+  /* "Key-macro-economic-indicators-chart" - v"1.0.0"    */
+  /* http://ec.europa.eu/eurostat https://ec.europa.eu/eurostat     */
+  /* Author: Sven Kuncikowski <sven.kuncikowski@sword-group.com>    */
+  /* "Licensed European Union Public Licence (EUPL v.1.1)"          */
+  /******************************************************************/
+  <![endif]--><!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+ <script src="jquery-1.12.4.min.js"></script>
+ <script src="4.1.10/highcharts.js"></script>
+ <script src="4.1.10/highcharts-more.js"></script>
+ <script src="fontawesome-free-5.13.0-web/js/all.min.js"></script>
+ <script src="bootstrap-4.1.1/js/bootstrap.min.js"></script>
+ <link href="styles.css" rel="stylesheet">
+ <link href="flame.css" rel="stylesheet">
+    <script src="../../js/analytics.js"></script>
+</head>
+
+<body>
+  <div id="loader" style="position: fixed; height: 10%; width: 10%; left: 45%; top: 45%;">
+    <div class="row justify-content-center align-items-center fa-3x">
+      <i class="fas fa-spinner fa-spin"></i>
+    </div>
+  </div>
+
+
+  <div id="global" class="container-fluid invisible">
+    <div id='legend-container-desktop' class="legendcontainer-desktop d-none" style="margin-top: 30px;"></div>
+
+    <header id="navbar-desktop" class="d-none navbar navbar-expand-sm navbar-light" style="background-color: #ffffff;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDesktop" aria-controls="navbarNavDesktop" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDesktop">
+        <ul id="social-container-desktop" class="navbar-nav mr-auto">
+        </ul>
+      </div>
+    </header>
+
+    <header id="navbar-mobile" class="d-none navbar navbar-light" style="background-color: #ffffff;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavMobile" aria-controls="navbarNavMobile" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavMobile">
+          <span id="choose-country" class="navbar-text d-none">
+            choose-country
+          </span>
+
+        <ul id="countries-list-mobile" class="navbar-nav mr-auto mt-2 mt-lg-0 d-none">
+          <li class="nav-item">
+            <div id="countries-container-mobile" class="dropdown-menu-show countries-mobile-size" aria-labelledby="navbarDropdownMenuLink">
+              </div>
+              <div id="countries-warning" class="d-none">countries-warning</div>
+          </li>
+        </ul>
+        <ul id="social-container-mobile" class="navbar-nav mr-auto">
+        </ul>
+      </div>
+    </header>
+
+    <div id="title-col" class="row text-center d-none">
+      <div class="col-3">
+        <div class="d-flex justify-content-start"></div>
+      </div>
+      <div class="col text-center">
+        <h3 id="title" class="">
+          <strong id="chart_title">chart_title</strong>
+        </h3>
+      </div>
+      <div class="col-3">
+        <div class="d-flex justify-content-end">
+        </div>
+      </div>
+    </div>
+    <div id="title-row-mobile" class="row text-center d-none">
+      <div class="col">
+        <div id="indicators-container-mobile">
+          <select id="indicators-mobile" class="selectpicker indicator-select" title="Select indicator" data-width="90%"></select>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center d-none">
+      <div class="col mx-auto">
+        <h5 id="chart_subtitle">chart_subtitle</h5>
+      </div>
+    </div>
+    <form>
+      <div class="form-row align-items-center justify-content-center">
+        <div id="countries-container-desktop" class="col-auto d-none">
+          <select id="countries-desktop" class="selectpicker show-tick country-select" multiple data-actions-box="true" data-selected-text-format="count > 1"
+              title="Select items" data-size="12" data-width="250px" data-hide-disabled="true" data-style="btn-flags"></select>
+        </div>
+        <div id="indicators-container" class="d-none">
+          <select id="indicators" class="selectpicker indicator-select" title="Select indicator"></select>
+        </div>
+      </div>
+    </form>
+    <div id="dummy">
+      <div class="row text-center">
+        <div class="col mx-auto">
+          <div id="linechart"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="bookmark-container" class="row text-center d-none">
+      <div class="col">
+        <div class="d-flex justify-content-center">
+          <div id="bookmark-link" style="float:left;">bookmark-link</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="container-modal-embed" class="modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div id="embed-header" class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div id="embed" class="modal-body">
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../js/vendor/l10n.js"></script>
+  <script src="./l10n/localisations.js"></script>
+  <script src="../../js/lang.js"></script>
+
+  <script src="../../js/vendor/promise-polyfill.min.js"></script>
+<script src="../../js/vendor/xlsx/xlsx.mini.min.js"></script>
+  <script src="../../js/ch13_1.js"></script>
+  <script src="flame.js"></script>
+
+</body>
+</html>

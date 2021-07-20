@@ -1,1 +1,135 @@
-vis/chapter11_1
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link href="styles.css" rel="stylesheet" />
+    <link href="fa-svg-with-js.css" rel="stylesheet" />
+    <script src="../../js/analytics.js"></script>
+  </head>
+
+  <body>
+    <div id="loader">
+      <div class="row justify-content-center align-items-center fa-3x">
+        <i class="fas fa-spinner fa-spin"></i>
+      </div>
+    </div>
+
+    <div id="global" class="container-fluid invisible">
+      <header
+        id="navbar-desktop"
+        class="d-none navbar navbar-expand-sm navbar-light"
+      >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDesktop"
+          aria-controls="navbarNavDesktop"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDesktop">
+          <ul id="social-container-desktop" class="navbar-nav mr-auto"></ul>
+        </div>
+      </header>
+      <div id="title-col" class="row text-center">
+        <div class="col-3">
+          <div class="d-flex justify-content-start"></div>
+        </div>
+        <div class="col text-center">
+          <h1 id="title" class="d-none">
+            <strong id="chart_title">chart_title</strong>
+          </h1>
+	  <span id="chart_subtitle">chart_subtitle</span>
+        </div>
+        <div class="col-3">
+          <div class="d-flex justify-content-end"></div>
+        </div>
+      </div>
+      <form style="display:none">
+        <div class="form-row align-items-center justify-content-center">
+          <div class="col-3"></div>
+          <div id="countries-container-desktop" class="col d-none">
+            <select
+              id="countries-desktop"
+              class="selectpicker show-tick country-select"
+              data-width="300px"
+              data-size="12"
+              data-style="btn-flags"
+            ></select>
+          </div>
+          <div class="col-3"></div>
+          <!-- <div id="units-container-desktop" class="col-auto">
+          <select id="units-desktop" class="selectpicker show-tick country-select" data-width="auto" data-size="12"></select>
+        </div> -->
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-9">
+          <div id="tree"></div>
+        </div>
+        <div class="col-3 text-right">
+          <div id="barchart">
+            <div id="footnotes"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="bookmark-container" class="row text-center">
+        <div class="col">
+          <div class="d-flex justify-content-center">
+            <div id="bookmark-link">bookmark-link</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="container-modal-embed"
+      class="modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div id="embed-header" class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id="embed" class="modal-body"></div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- needed for localisation, otherwise it is not available -->
+    <script src="./l10n/localisations.js"></script>
+    <script src="./config/configuration.js"></script>
+    <script src="./config/chapter_02_02.js"></script>
+    <script src="4e51fb98cf4941e7ceda.manifest.js"></script>
+    <script src="4e51fb98cf4941e7ceda.vendor.js"></script>
+    <script src="4e51fb98cf4941e7ceda.main.js"></script>
+
+  <script src="../../js/vendor/promise-polyfill.min.js"></script>
+<script src="../../js/vendor/xlsx/xlsx.mini.min.js"></script>
+  <script src="../../js/ch11_1.js"></script>
+  </body>
+</html>
