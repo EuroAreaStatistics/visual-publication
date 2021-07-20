@@ -1,1 +1,279 @@
-vis/chapter11_1
+<!DOCTYPE html>
+<!-- Author: Alexander Hepp <alexander.hepp@sword-group.com> Version 0.3.0 - 17.04.2018 -->
+<html lang="en">
+  <head>
+    <title translate="publication.title"></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="icon" href="data:," />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../../js/analytics.js"></script>
+    <link href="inflation.c4b09354c979b1cc8805.css?_=1621330639" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="global" class="container-fluid">
+      <div id="embed-modal" data-role="dialog" class="modal fade">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" translate="general.embed-icon">
+                Copy this code and paste it in your Website:
+              </h4>
+              <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="embed-content">
+              <pre
+                class="pre-scrollable"
+              ><code></code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav id="navbar-desktop" class="navbar navbar-expand-sm navbar-light">
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navItems"
+          aria-controls="navItems"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          title="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navItems">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a
+                class="social-button pointer nav-link d-flex justify-content-start align-items-center"
+                id="embed-button"
+                title="Embed this chart"
+                data-toggle="modal"
+                data-target="#embed-modal"
+              >
+                <span
+                  class="fa-layers fa-2x"
+                  data-tooltip="tooltip"
+                  data-placement="top"
+                  title="Embed"
+                >
+                  <i class="fas fa-circle"></i>
+                  <i
+                    class="fas fa-code fa-inverse"
+                    data-fa-transform="shrink-7 left-2"
+                  ></i>
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                id="tweet"
+                title="Tweet"
+                class="nav-link d-flex justify-content-start align-items-center social-button pointer"
+                onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+                href=""
+              >
+                <span
+                  class="fa-layers fa-2x"
+                  data-tooltip="tooltip"
+                  data-placement="top"
+                  title="Tweet"
+                >
+                  <i class="fas fa-circle"></i>
+                  <i
+                    class="fab fa-twitter fa-inverse"
+                    data-fa-transform="shrink-7"
+                  ></i>
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                id="facebook-icon"
+                class="nav-link d-flex justify-content-start align-items-center social-button pointer"
+              >
+                <span
+                  class="fa-layers fa-2x"
+                  data-tooltip="tooltip"
+                  data-placement="top"
+                  title="Facebook"
+                >
+                  <i class="fas fa-circle"></i>
+                  <i
+                    class="fab fa-facebook-f fa-inverse"
+                    data-fa-transform="shrink-7"
+                  ></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="heading" translate="vis.title"></div>
+      <div id="title" translate="vis.subtitle"></div>
+      <div id="subtitle" translate="vis.unit"></div>
+
+      <div
+        id="cflags"
+        role="navigation"
+        onclick="showLstFlags()"
+        onkeyup="showLstFlags()"
+      ></div>
+
+      <div
+        id="sel-indicators"
+        role="navigation"
+        onclick="showLstIndicators()"
+        onkeyup="showLstIndicators()"
+      ></div>
+
+      <div id="main" class="clearfix">
+        <div id="sideL">
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            id="products"
+            viewBox="0 0 400 420"
+            width="400"
+            height="420"
+            preserveAspectRatio="xMidYMid meet"
+          ></svg>
+        </div>
+        <div id="sideR">
+          <svg id="ranking" width="264" height="308">
+            <defs>
+              <pattern
+                id="imgcoin1"
+                patternUnits="userSpaceOnUse"
+                x="15.5"
+                y="8"
+                width="96"
+                height="12"
+              >
+                <image
+                  alt="coin"
+                  x="0"
+                  y="0"
+                  width="96"
+                  height="12"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="img/coins/coin.png"
+                ></image>
+              </pattern>
+              <pattern
+                id="imgcoin2"
+                patternUnits="userSpaceOnUse"
+                x="10.5"
+                y="8"
+                width="96"
+                height="12"
+              >
+                <image
+                  alt="coin"
+                  x="0"
+                  y="0"
+                  width="96"
+                  height="12"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="img/coins/coin.png"
+                ></image>
+              </pattern>
+              <pattern
+                id="imgcoinEA"
+                patternUnits="userSpaceOnUse"
+                x="10.5"
+                y="8"
+                width="96"
+                height="12"
+              >
+                <image
+                  alt="coinEA"
+                  x="0"
+                  y="0"
+                  width="96"
+                  height="12"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="img/coins/coinEA.png"
+                ></image>
+              </pattern>
+              <pattern
+                id="imgcoinMS1"
+                patternUnits="userSpaceOnUse"
+                x="15.5"
+                y="8"
+                width="96"
+                height="12"
+              >
+                <image
+                  alt="coinMS"
+                  x="0"
+                  y="0"
+                  width="96"
+                  height="12"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="img/coins/coinMS.png"
+                ></image>
+              </pattern>
+              <pattern
+                id="imgcoinMS2"
+                patternUnits="userSpaceOnUse"
+                x="10.5"
+                y="8"
+                width="96"
+                height="12"
+              >
+                <image
+                  alt="coinMS"
+                  x="0"
+                  y="0"
+                  width="96"
+                  height="12"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xlink:href="img/coins/coinMS.png"
+                ></image>
+              </pattern>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <div id="footnotes"></div>
+    </div>
+
+    <div id="loader">
+      <img src="img/loader.gif" alt="loader" title="loader" width="100px" />
+    </div>
+
+    <!-- needed for localisation, otherwise it is not available -->
+    <script
+      type="text/javascript"
+      src="./l10n/localisations.js"
+      charset="utf-8"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./config/config.js"
+      charset="utf-8"
+    ></script>
+
+    <script src="../../js/vendor/promise-polyfill.min.js"></script>
+    <script src="../../js/vendor/xlsx/xlsx.mini.min.js"></script>
+    <script src="../../js/ch11_1.js"></script>
+
+    <script
+      type="text/javascript"
+      src="inflation.c4b09354c979b1cc8805.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="vendor.c4b09354c979b1cc8805.js"
+    ></script>
+  </body>
+</html>
