@@ -1,20 +1,3 @@
-Statistics Insights: Inflation is an interactive publication produced by the European Central Bank and the national central banks of the Eurosystem.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of the work and associated documentation files (the “Software”), to deal in the Software without restriction (with the exception of the personal inflation calculator that cannot be used for any commercial purpose, including distributing, sublicensing and/or selling copies of original or modified code), including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions.
-
-The software is provided “as is”, without warranty of any kind.
-
-In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the Software or the use of or other dealings in the Software.
-
-The Software is built upon and made available by Eurostat and Lietuvos bankas.
-See also the Eurostat Disclaimer <https://ec.europa.eu/info/legal-notice_en> and the Terms of use of Lietuvos bankas <https://www.lb.lt/en/terms-of-use>.
-
-The ECB/Eurostat/Lietuvos bankas take no responsibility for any replication of the content of the Software, or any other form of redistribution.
-
-Cover photo © monticello, Xsandra, guenterguni, Rost-9D, scanrail, SergeiKorolko/iStock
-
-Chapter 2.2 photo “Antique refrigerator” © jgroup/iStock
-
-Chapter 2.2 photo “Modern household refrigerator with control display” © Grassetto/iStock
-
-The European System of Central Banks (ESCB) is committed to providing its statistics free of charge as a public good of high quality irrespective of any subsequent commercial or non-commercial use. All publicly available ESCB statistics may be reused free of charge on the condition that the source is quoted (e.g. “Source: euro area statistics”) and that the statistics (including metadata) are not modified.
+Permission is hereby granted, free of charge, to any person obtaining a copy of the work and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The software is provided "as is", without warranty of any kind.
+In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
+The visual publications: “Money, credit and central bank interest rates” and “Inflation” are two interactive publications built upon and made available by Eurostat, see the Eurostat Disclaimer https://ec.europa.eu/info/legal-notice_en. The ECB/Eurostat does not take responsibility for any replication of the content of the Software, or any other form of redistribution.
