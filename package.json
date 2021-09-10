@@ -3,6 +3,7 @@
   "license": "SEE LICENSE IN LICENSE.txt",
   "scripts": {
     "generate:l10n:en": "rm -rf messages && extract-messages -l=en -o public/l10n -d en --flat true --messages-dir ./messages/ --extract-source-location true 'src/**/!(*.test).js'",
+    "import:l10n:en": "babel-node src/replace-messages.js",
     "update": "babel-node src/update-urls.js",
     "generate": "npm run prettier && npm run build:site && npm run generate:l10n:en",
     "prettier": "prettier --write 'src/**/*.js' 'runtime/**/*.js' 'public/js/*-onload.js'",
