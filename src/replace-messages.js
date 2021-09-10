@@ -13,7 +13,7 @@ const encode = (txt) => {
     }
   }
   txt = txt.replace(
-    /[^\x00-\x7F]/g, // eslint-disable-line no-control-regex
+    /[^\x00-\x7F\xA0]/g, // eslint-disable-line no-control-regex
     (match) => "\\u" + match.charCodeAt(0).toString(16).padStart(4, "0")
   );
   return txt;
