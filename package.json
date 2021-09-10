@@ -2,7 +2,8 @@
   "name": "digital_publication",
   "license": "SEE LICENSE IN LICENSE.txt",
   "scripts": {
-    "l10n": "extract-messages -l=en -o public/l10n -d en --flat true 'src/**/!(*.test).js'",
+    "l10n": "rm -rf messages && extract-messages -l=en -o public/l10n -d en --flat true --messages-dir ./messages/ --extract-source-location true 'src/**/!(*.test).js'",
+    "import:l10n:en": "babel-node src/replace-messages.js",
     "update": "babel-node src/update-urls.js",
     "prettier": "prettier --write '*.js' 'src/**/*.js' 'runtime/**/*.js' 'public/js/*-onload.js'",
     "eslint": "eslint 'runtime/**/*.js' 'src/**/*.js'",
